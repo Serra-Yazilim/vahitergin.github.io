@@ -6,11 +6,15 @@ Yayında: https://serrabilisim.com
 ## Dosyalar
 - `index.html` — ana sayfa (ürünler, hizmetler, hakkımızda, iletişim)
 - `urunler/<slug>/index.html` — her ürünün kendi detay sayfası (aşağıda)
+- `hizmetler/<slug>/index.html` — hizmet detay sayfaları (aşağıda)
 - `gizlilik.html` — KVKK aydınlatma metni ve çerez politikası (`noindex`)
 - `styles.css` — tasarım, açık/koyu tema ve ürün arayüz mockup'ları
 - `script.js` — tema geçişi, mobil menü, reveal animasyonları, metrik sayaçları
 - `robots.txt` — tüm botlara açık, sitemap'i işaret eder
-- `sitemap.xml` — ana sayfa + 6 ürün sayfası
+- `sitemap.xml` — ana sayfa + 6 ürün + 3 hizmet sayfası
+- `llms.txt` — yapay zekâ araçları için site özeti (ürün/hizmet listesi ve linkleri)
+- `assets/og/<slug>.png` — her sayfanın 1200×630 paylaşım görseli (`og:image`)
+- `assets/logo.png` — 512×512 logo (JSON-LD `Organization.logo`)
 - `google*.html` — Google Search Console doğrulama dosyası (silme)
 - `CNAME` — özel alan adı (serrabilisim.com)
 - `.nojekyll` — GitHub Pages'in Jekyll işlemesini atlaması için
@@ -62,20 +66,49 @@ Yayına girdikten sonra Search Console → URL Inspection → **Request indexing
 Gerçek ekran görüntüsü koymak istersen `pcard__visual` içeriğini
 `<img src="assets/urun.png" alt="..." />` ile değiştirmen yeterli.
 
+## Hizmet sayfaları
+
+| Hizmet | URL |
+|---|---|
+| SAP Business One danışmanlığı | `/hizmetler/sap-business-one-danismanlik/` |
+| SAP Business One add-on geliştirme | `/hizmetler/sap-business-one-add-on-gelistirme/` |
+| SAP Business One entegrasyonu | `/hizmetler/sap-business-one-entegrasyon/` |
+
+Her hizmet sayfasında kapsam kartları, süreç adımları, açıklama metni, SSS
+(`<details>`) ve ilgili ürünler var. JSON-LD: `Service` + `BreadcrumbList` +
+`FAQPage`. Ana sayfadaki hizmet kartlarındaki "Detaylı bilgi →" linkleri ve tüm
+sayfaların footer'ındaki **Hizmetler** sütunu bu sayfalara gider.
+
+Yeni hizmet sayfası eklerken: sayfayı kopyala, `sitemap.xml`'e, `llms.txt`'ye,
+tüm footer'lara ve ana sayfa JSON-LD'sindeki `hasOfferCatalog`'a ekle.
+
+## SSS
+Ana sayfada `#sss` bölümü var. Soru eklerken hem görünen `<details>` bloğunu hem
+de `<head>` içindeki `FAQPage` JSON-LD'sini güncelle; ikisi birebir aynı olmalı.
+
 ## SEO notları
 - Kanonik alan adı **www'suz**: `https://serrabilisim.com`. `www` buraya 301
   yönleniyor. Tüm `canonical` ve `sitemap.xml` URL'leri www'suz yazılır.
 - Her sayfanın kendine ait `<title>`, `meta description`, `canonical` ve tek bir
   `<h1>`'i olmalı.
-- Ana sayfada `Organization` + `WebSite` + `ItemList`, ürün sayfalarında
-  `SoftwareApplication` + `BreadcrumbList` JSON-LD'si var.
+- Ana sayfada `Organization` (logo, kurucu, iletişim, hizmet kataloğu) +
+  `WebSite` + `ItemList` + `FAQPage`, ürün sayfalarında `SoftwareApplication` +
+  `BreadcrumbList`, hizmet sayfalarında `Service` + `BreadcrumbList` + `FAQPage`
+  JSON-LD'si var.
   Değiştirdikten sonra https://search.google.com/test/rich-results ile kontrol et.
-- Eksik: 1200×630 `og:image` görseli. Eklenince tüm sayfaların head'ine
-  `<meta property="og:image" content="https://serrabilisim.com/og.png" />` gir.
+- Her sayfanın `og:image` ve `twitter:image` etiketi `assets/og/<slug>.png`
+  görseline bakar (ana sayfa: `home.png`). Yeni sayfa eklersen görselini de ekle.
+- Dahili linkler kökten başlar (`/`, `/#urunler`, `/hizmetler/...`); `index.html`
+  yazma.
 
 ## Yerelde açmak
-`index.html` dosyasına çift tıkla — tarayıcıda açılır. Kurulum gerekmez.
-Ürün sayfaları da öyle; göreli yollar dosya sisteminde de çalışır.
+Linkler kökten (`/`) başladığı için siteyi küçük bir sunucuyla aç:
+
+```
+python -m http.server 8000
+```
+
+Sonra tarayıcıda http://localhost:8000 adresine git.
 
 ## Yayınlama (GitHub Pages)
 Depo **public** olmalı, site kaynağı deponun kökü.

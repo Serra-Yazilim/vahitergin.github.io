@@ -1,0 +1,25 @@
+# Serra Bilişim
+
+> Serra Bilişim, İstanbul merkezli bir yazılım şirketidir. SAP Business One (SAP B1) kullanan şirketler için raporlama, bordro, banka entegrasyonu, üretim takip, WhatsApp yapay zekâ asistanı ve e-Dönüşüm ürünleri geliştirir; SAP B1 danışmanlığı, add-on geliştirme ve sistem entegrasyonu hizmeti verir. Ürünler MS SQL Server ve SAP HANA üzerinde çalışır ve Türkiye lokalizasyonuna uygundur.
+
+İletişim: iletisim@serrabilisim.com · +90 506 875 30 33 · İstanbul, Türkiye
+
+## Ürünler
+
+- [Panora](https://serrabilisim.com/urunler/panora/): SAP Business One raporlama ve dashboard çözümü. Query Manager sorgularını pano, pivot ve grafiğe dönüştürür; Excel ve PDF raporları zamanlanmış olarak e-postayla gönderir. Kendi sunucunuzda, SAP veritabanına salt-okunur bağlanarak çalışır.
+- [Serra Bordro](https://serrabilisim.com/urunler/serra-bordro/): SAP Business One entegre, Türkiye mevzuatına uyumlu bordro ve İK portalı. Puantaj, izin, avans, kıdem-ihbar, vergi hesaplama ve SAP B1'e yevmiye aktarımı.
+- [Serra Banka](https://serrabilisim.com/urunler/serra-banka/): SAP Business One banka entegrasyonu. Otomatik hesap ekstresi, eşleştirme ve muhasebe kaydı, toplu ödeme ve maaş talimatı, DBS, POS ve sanal POS.
+- [Serra Üretim](https://serrabilisim.com/urunler/serra-uretim/): SAP Business One üretim takip sistemi. İş emri, Gantt ile planlama, barkodlu terminal, kalite kontrol, bakım ve atölye TV ekranı.
+- [SAWBot](https://serrabilisim.com/urunler/sawbot/): SAP Business One verisini WhatsApp üzerinden doğal dille sorgulayan yapay zekâ asistanı. Cari ekstre, stok, satış ve tahsilat sorgusu; WhatsApp'tan satın alma onayı.
+- [Serra e-Dönüşüm](https://serrabilisim.com/urunler/serra-e-donusum/): SAP Business One e-Fatura, e-Arşiv, e-İrsaliye ve e-İhracat entegrasyonu. İzibiz, Uyumsoft, Logo, eFinans, EDM ve KoçSistem dahil 9'dan fazla özel entegratör.
+
+## Hizmetler
+
+- [SAP Business One danışmanlığı](https://serrabilisim.com/hizmetler/sap-business-one-danismanlik/): İhtiyaç analizi, kurulum (MS SQL / HANA), veri göçü, Türkiye lokalizasyonu, kullanıcı eğitimi, canlıya geçiş ve destek.
+- [SAP Business One add-on geliştirme](https://serrabilisim.com/hizmetler/sap-business-one-add-on-gelistirme/): Özel ekranlar, iş kuralları, onay akışları, raporlar, web portalları ve otomasyon; DI API, UI API ve Service Layer ile.
+- [SAP Business One entegrasyonu](https://serrabilisim.com/hizmetler/sap-business-one-entegrasyon/): E-ticaret, banka, GİB e-Belge, lojistik, üretim terminalleri, WhatsApp ve üçüncü parti yazılımlarla veri alışverişi.
+
+## Diğer
+
+- [Ana sayfa ve sık sorulan sorular](https://serrabilisim.com/#sss): SAP Business One ve Serra ürünleri hakkında sık sorulan sorular.
+- [KVKK aydınlatma metni](https://serrabilisim.com/gizlilik.html)
