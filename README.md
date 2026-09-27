@@ -8,6 +8,8 @@ Yayında: https://serrabilisim.com
 - `urunler/<slug>/index.html` — her ürünün kendi detay sayfası (aşağıda)
 - `hizmetler/<slug>/index.html` — hizmet detay sayfaları (aşağıda)
 - `gizlilik.html` — KVKK aydınlatma metni ve çerez politikası (`noindex`)
+- `erpbot/{gizlilik,kullanim-kosullari,veri-silme}/index.html` — Meta'daki **ErpBot** uygulamasının (SAWBot) gizlilik, kullanım koşulları ve veri silme sayfaları (`noindex`). Meta App Dashboard → Basic Settings'teki URL alanları bunlara bakar; adresleri değiştirme.
+- `assets/erpbot-icon-1024.png` — ErpBot uygulama ikonu (Meta, 1024×1024)
 - `styles.css` — tasarım, açık/koyu tema ve ürün arayüz mockup'ları
 - `script.js` — tema geçişi, mobil menü, reveal animasyonları, metrik sayaçları
 - `robots.txt` — tüm botlara açık, sitemap'i işaret eder
