@@ -27,7 +27,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%2314b8a6'/><stop offset='1' stop-color='%230f766e'/></linearGradient></defs><rect width='100' height='100' rx='24' fill='url(%23g)'/><text x='50' y='69' font-size='50' font-family='Arial' font-weight='bold' fill='white' text-anchor='middle'>S</text></svg>" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/icon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png" />
 
   <script type="application/ld+json">
   {
@@ -161,8 +164,8 @@
   <header class="nav" id="nav">
     <div class="container nav__inner">
       <a href="#top" class="nav__brand">
-        <span class="nav__mark">S</span>
-        <span class="nav__name">Serra<span>Bilişim</span></span>
+        <img class="nav__logo nav__logo--day" src="assets/logo-serra.png" alt="Serra Bilişim" width="200" height="40" />
+        <img class="nav__logo nav__logo--night" src="assets/logo-serra-light.png" alt="" aria-hidden="true" width="200" height="40" />
       </a>
 
       <nav class="nav__links" id="navLinks">
@@ -210,51 +213,9 @@
           </ul>
         </div>
 
-        <!-- Hero görseli: ürün arayüzü kompozisyonu -->
-        <div class="hero__visual reveal" aria-hidden="true">
-          <div class="mock mock--tilt" style="--p:#0f766e">
-            <div class="mock__bar"><i></i><i></i><i></i><span>Serra · Yönetim Panosu</span></div>
-            <div class="mock__body">
-              <div class="kpis kpis--3">
-                <div class="kpi"><span class="kpi__l">Aylık Bordro</span><strong class="kpi__v">₺4,28M</strong><span class="kpi__d kpi__d--up">▲ %6,2</span></div>
-                <div class="kpi"><span class="kpi__l">Açık İş Emri</span><strong class="kpi__v">128</strong><span class="kpi__d">bugün 24</span></div>
-                <div class="kpi"><span class="kpi__l">e-Belge</span><strong class="kpi__v">1.940</strong><span class="kpi__d kpi__d--up">%99,4</span></div>
-              </div>
-              <div class="panel">
-                <div class="panel__head"><span>Nakit Akışı · Son 12 Ay</span><span class="chip">Canlı</span></div>
-                <div class="bars">
-                  <i style="--h:38%"></i><i style="--h:52%"></i><i style="--h:44%"></i><i style="--h:66%"></i>
-                  <i style="--h:58%"></i><i style="--h:78%"></i><i style="--h:64%"></i><i style="--h:88%"></i>
-                  <i style="--h:72%"></i><i style="--h:95%"></i><i style="--h:81%"></i><i style="--h:100%"></i>
-                </div>
-              </div>
-              <div class="rows">
-                <div class="row"><span class="row__t">Alış Siparişi · A-2291</span><span class="pill pill--ok">Onaylandı</span></div>
-                <div class="row"><span class="row__t">e-Fatura · GİB Gönderim</span><span class="pill pill--info">İşlendi</span></div>
-                <div class="row"><span class="row__t">Banka Mutabakat · Ziraat</span><span class="pill pill--warn">Bekliyor</span></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Yüzen telefon: WhatsApp bot -->
-          <div class="phone float-a">
-            <div class="phone__top"><span class="phone__av">S</span><span class="phone__name">SAWBot</span></div>
-            <div class="chat">
-              <div class="bub bub--out">Dünkü tahsilatlar ne kadar?</div>
-              <div class="bub bub--in"><b>485.000 ₺</b><br />3 firma · 2 EFT, 1 çek</div>
-              <div class="bub bub--in bub--card">
-                Alış siparişi onay bekliyor<br /><b>85.000 ₺ · Akaryakıt</b>
-                <span class="bub__btns"><span class="bub__btn bub__btn--ok">✓ Onayla</span><span class="bub__btn">✕ Reddet</span></span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Yüzen mini kart -->
-          <div class="minicard float-b">
-            <svg viewBox="0 0 42 42" class="donut"><circle class="donut__bg" cx="21" cy="21" r="16"/><circle class="donut__fg" cx="21" cy="21" r="16" style="--pct:87"/></svg>
-            <span class="minicard__t"><span class="minicard__l">OEE · Üretim</span><strong class="minicard__v">%87</strong></span>
-          </div>
-        </div>
+        <!-- Hero görseli: onaylı hero görseli (assets/bg/hero-art.jpg) masaüstünde arka plandır;
+             tablet ve mobilde bu kutu aynı görselin kırpılmış hâlini metnin altında gösterir -->
+        <div class="hero__visual" aria-hidden="true"></div>
       </div>
 
       <!-- Güven şeridi -->
@@ -270,7 +231,7 @@
     </section>
 
     <!-- ===== METRİKLER ===== -->
-    <section class="section section--tight section--alt">
+    <section class="section section--tight scene scene--metrics">
       <div class="container">
         <ul class="metrics reveal">
           <li><strong data-count="10" data-suffix="+">10+</strong><span>Yıllık SAP B1 deneyimi</span></li>
@@ -282,11 +243,11 @@
     </section>
 
     <!-- ===== ÜRÜNLER ===== -->
-    <section id="urunler" class="section">
+    <section id="urunler" class="section scene">
       <div class="container">
         <div class="section__head section__head--center reveal">
           <span class="section__tag">Ürünler</span>
-          <h2>SAP Business One'ı tamamlayan hazır çözümler</h2>
+          <h2>SAP Business One'ı tamamlayan <span>hazır çözümler</span></h2>
           <p class="section__sub">Her biri sahada çalışan, canlı müşteri kullanan ürünler. Tek başına ya da birlikte kullanılabilir.</p>
         </div>
 
@@ -579,7 +540,7 @@
     </section>
 
     <!-- ===== HİZMETLER ===== -->
-    <section id="hizmetler" class="section section--alt">
+    <section id="hizmetler" class="section scene scene--soft">
       <div class="container">
         <div class="section__head section__head--center reveal">
           <span class="section__tag">Hizmetler</span>
@@ -626,7 +587,7 @@
     </section>
 
     <!-- ===== NEDEN SERRA ===== -->
-    <section id="neden" class="section">
+    <section id="neden" class="section scene scene--soft scene--soft-deep">
       <div class="container">
         <div class="section__head section__head--center reveal">
           <span class="section__tag">Neden Serra</span>
@@ -642,7 +603,7 @@
     </section>
 
     <!-- ===== HAKKIMIZDA ===== -->
-    <section id="hakkimizda" class="section section--alt">
+    <section id="hakkimizda" class="section scene scene--warm">
       <div class="container">
         <div class="about2">
           <div class="about2__text reveal">
@@ -693,7 +654,7 @@
     </section>
 
     <!-- ===== SSS ===== -->
-    <section id="sss" class="section">
+    <section id="sss" class="section scene scene--soft scene--soft-clean">
       <div class="container">
         <div class="section__head section__head--center reveal">
           <span class="section__tag">SSS</span>
@@ -742,7 +703,7 @@
     </section>
 
     <!-- ===== İLETİŞİM / CTA ===== -->
-    <section id="iletisim" class="section">
+    <section id="iletisim" class="section scene scene--deep">
       <div class="container">
         <div class="cta reveal">
           <div class="cta__glow" aria-hidden="true"></div>
@@ -758,13 +719,12 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer scene scene--deep scene--deepest">
     <div class="container">
       <div class="footer__grid">
         <div class="footer__brand">
           <a href="#top" class="nav__brand">
-            <span class="nav__mark">S</span>
-            <span class="nav__name">Serra<span>Bilişim</span></span>
+            <img class="footer__logo" src="assets/logo-serra-light.png" alt="Serra Bilişim" width="180" height="36" loading="lazy" />
           </a>
           <p>SAP Business One için ürün geliştiren, entegre eden ve destekleyen yazılım şirketi.</p>
           <div class="footer__socials">
