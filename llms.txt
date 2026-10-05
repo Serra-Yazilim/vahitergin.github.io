@@ -2,7 +2,7 @@
 
 > Serra Bilişim, İstanbul merkezli bir yazılım şirketidir. SAP Business One (SAP B1) kullanan şirketler için raporlama, bordro, banka entegrasyonu, üretim takip, WhatsApp yapay zekâ asistanı ve e-Dönüşüm ürünleri geliştirir; SAP B1 danışmanlığı, add-on geliştirme ve sistem entegrasyonu hizmeti verir. Ürünler MS SQL Server ve SAP HANA üzerinde çalışır ve Türkiye lokalizasyonuna uygundur.
 
-İletişim: iletisim@serrabilisim.com · +90 506 875 30 33 · İstanbul, Türkiye
+İletişim: iletisim@serrabilisim.com · +90 530 321 30 33 · İstanbul, Türkiye
 
 ## Ürünler
 
