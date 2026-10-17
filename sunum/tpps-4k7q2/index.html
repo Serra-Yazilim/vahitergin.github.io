@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>TPPS × SAP Business One — Süreç Videoları | Serra Bilişim</title>
+<meta name="robots" content="noindex, nofollow, noarchive" />
+<meta name="googlebot" content="noindex, nofollow" />
+<meta name="referrer" content="no-referrer" />
+<meta name="description" content="Satınalmadan sevkiyata TPPS ve SAP Business One entegrasyonu: dört kısa süreç videosu." />
+<link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#0d141a; --bg-alt:#111a21; --surface:#16212a; --surface-2:#1c2932; --border:#24333e;
+  --text:#eaf1f5; --text-soft:#93a5b2; --accent:#2dd4bf; --accent-deep:#0f766e; --amber:#f5c400;
+  --radius:16px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;
+  background-image:radial-gradient(900px 500px at 85% -10%,rgba(45,212,191,.10),transparent 60%),radial-gradient(700px 400px at -10% 20%,rgba(15,118,110,.14),transparent 60%);background-repeat:no-repeat}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+header img{height:34px;width:auto;display:block}
+.tag{font-size:12.5px;color:var(--text-soft);border:1px solid var(--border);border-radius:999px;padding:6px 12px}
+.hero{padding:34px 0 26px}
+.kicker{font-family:"Space Grotesk",sans-serif;color:var(--accent);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(30px,4.6vw,50px);line-height:1.08;letter-spacing:-.02em;margin:12px 0 14px;max-width:860px}
+.lead{color:var(--text-soft);font-size:17.5px;max-width:760px}
+.flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:22px;font-size:13.5px;font-weight:600}
+.flow span.n{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 12px}
+.flow span.a{color:var(--accent)}
+.stage{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:22px;margin-top:18px}
+.player{background:#000;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:0 40px 90px -40px rgba(0,0,0,.8)}
+.player video{display:block;width:100%;aspect-ratio:16/9;background:#000}
+.now{padding:16px 18px;background:var(--surface);border-top:1px solid var(--border)}
+.now .t{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:600}
+.now .d{color:var(--text-soft);font-size:14.5px;margin-top:4px}
+.list{display:flex;flex-direction:column;gap:10px}
+.item{display:flex;gap:12px;align-items:stretch;text-align:left;width:100%;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:10px;cursor:pointer;color:var(--text);font:inherit;transition:border-color .15s,background .15s}
+.item:hover{border-color:#36515f}
+.item.on{border-color:var(--accent);background:var(--surface-2)}
+.item img{width:132px;aspect-ratio:16/9;object-fit:cover;border-radius:8px;flex:none;background:#000}
+.item .m{display:flex;flex-direction:column;justify-content:center;min-width:0}
+.item .no{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.08em}
+.item .nm{font-weight:600;font-size:15px;margin-top:2px}
+.item .du{font-size:12.5px;color:var(--text-soft);margin-top:2px}
+.note{margin-top:14px;font-size:12.5px;color:var(--text-soft);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
+section.det{padding:46px 0 10px}
+h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;margin-bottom:16px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+.card .no{font-family:"Space Grotesk",sans-serif;color:var(--amber);font-weight:700}
+.card h3{font-family:"Space Grotesk",sans-serif;font-size:18px;margin:4px 0 8px}
+.card ul{list-style:none;display:flex;flex-direction:column;gap:6px;font-size:14px;color:var(--text-soft)}
+.card li{padding-left:16px;position:relative}
+.card li:before{content:"";position:absolute;left:0;top:.62em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.cta{margin:46px 0 30px;background:linear-gradient(135deg,rgba(15,118,110,.35),rgba(22,33,42,.9));border:1px solid var(--border);border-radius:var(--radius);padding:26px;display:flex;gap:20px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.cta h3{font-family:"Space Grotesk",sans-serif;font-size:22px}
+.cta p{color:var(--text-soft);font-size:14.5px;margin-top:4px}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:600;font-size:14.5px;text-decoration:none;border:1px solid var(--border);background:var(--surface)}
+.btn.p{background:var(--accent);color:#06231f;border-color:var(--accent)}
+footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-soft);font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:960px){.stage{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:560px){.wrap{padding:0 16px}.cards{grid-template-columns:1fr}.item img{width:108px}.lead{font-size:16px}header .tag{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a href="https://serrabilisim.com" aria-label="Serra Bilişim"><img src="../../assets/logo-serra-light.png" alt="Serra Bilişim" width="170" height="34" /></a>
+    <span class="tag">Özel paylaşım · Süreç videoları</span>
+  </header>
+
+  <section class="hero">
+    <div class="kicker">TPPS × SAP Business One</div>
+    <h1>Satınalmadan sevkiyata, sahadaki her adım SAP'ye kendiliğinden yansısın.</h1>
+    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla dört temel sürecin uçtan uca nasıl çalıştığını kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır.</p>
+    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span></div>
+  </section>
+
+  <div class="stage">
+    <div class="player">
+      <video id="vid" controls playsinline preload="metadata" poster="v/satinalma.jpg" src="v/satinalma.mp4"></video>
+      <div class="now"><div class="t" id="nowT">1 · Satınalma</div><div class="d" id="nowD"></div></div>
+    </div>
+    <div>
+      <div class="list" id="list"></div>
+      <div class="note">Videolar süreç canlandırmasıdır; ekranlar TPPS'in gerçek ekranları esas alınarak hazırlanmış, içerikteki firma, ürün ve rakamlar örnektir. Canlı demo için bizimle iletişime geçebilirsiniz.</div>
+    </div>
+  </div>
+
+  <section class="det">
+    <h2>Videolarda neler var?</h2>
+    <div class="cards">
+      <div class="card"><div class="no">01</div><h3>Satınalma</h3><ul><li>Satınalma talebi, ihtiyaç tarihi ve kullanım yeriyle</li><li>Departman onayı ve talep onayı, kim ve ne zaman</li><li>Çoklu tedarikçi teklifi, dövizli fiyatların TL karşılaştırması</li><li>Onaylı tekliften kilitli fiyatlı sipariş ve aşama takibi</li></ul></div>
+      <div class="card"><div class="no">02</div><h3>Mal Kabul</h3><ul><li>Siparişe bağlı tedarikçi irsaliyesi</li><li>Her koliye ayrı barkod ve etiket</li><li>El terminalinde okutarak kabul</li><li>SAP'de siparişe bağlı, partili mal girişi</li></ul></div>
+      <div class="card"><div class="no">03</div><h3>Üretim</h3><ul><li>TPPS'te üretim iş emri</li><li>Makinede koli etiketi basımı</li><li>Barkodla stoğa giriş</li><li>SAP'de üretim emri ve üretimden giriş</li></ul></div>
+      <div class="card"><div class="no">04</div><h3>Sevkiyat</h3><ul><li>Açık siparişten sevk fişi</li><li>Terminalde okutarak yükleme, yanlış koliye anında uyarı</li><li>Çeki listesi ve irsaliye</li><li>SAP teslimatı ve koliden üretime izlenebilirlik</li></ul></div>
+    </div>
+  </section>
+
+  <div class="cta">
+    <div><h3>Kendi verilerinizle canlı görmek ister misiniz?</h3><p>Süreçlerinize göre kısa bir canlı demo planlayalım.</p></div>
+    <div class="btns"><a class="btn p" href="mailto:iletisim@serrabilisim.com?subject=TPPS%20%C3%97%20SAP%20Business%20One%20demo%20talebi">iletisim@serrabilisim.com</a><a class="btn" href="tel:+905303213033">+90 530 321 30 33</a></div>
+  </div>
+
+  <footer><span>© 2026 Serra Bilişim · serrabilisim.com</span><span>Bu sayfa yalnızca bağlantıya sahip kişilerle paylaşılmıştır.</span></footer>
+</div>
+
+<script>
+const V=[
+ {k:'satinalma',n:'Satınalma',du:'2:51',d:'Talep, departman onayı, teklif karşılaştırması, talep onayı ve tekliften sipariş.'},
+ {k:'mal_kabul',n:'Mal Kabul',du:'3:15',d:'Siparişe bağlı irsaliye, koli barkodu, terminalle kabul ve SAP mal girişi.'},
+ {k:'uretim',n:'Üretim',du:'2:48',d:'İş emri, makinede etiket, barkodla stoğa giriş ve SAP üretim kayıtları.'},
+ {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'}];
+const vid=document.getElementById('vid'),list=document.getElementById('list');let cur=0;
+V.forEach((v,i)=>{const b=document.createElement('button');b.className='item';b.type='button';
+  b.innerHTML=`<img src="v/${v.k}.jpg" alt="" loading="lazy"><div class="m"><div class="no">BÖLÜM ${i+1}</div><div class="nm">${v.n}</div><div class="du">${v.du}</div></div>`;
+  b.onclick=()=>sec(i,true);list.appendChild(b);});
+function sec(i,play){cur=i;const v=V[i];vid.poster=`v/${v.k}.jpg`;vid.src=`v/${v.k}.mp4`;
+  document.getElementById('nowT').textContent=`${i+1} · ${v.n}`;document.getElementById('nowD').textContent=v.d;
+  [...list.children].forEach((c,j)=>c.classList.toggle('on',j===i));if(play){vid.play().catch(()=>{});}}
+vid.addEventListener('ended',()=>{if(cur<V.length-1)sec(cur+1,true);});
+sec(0,false);
+</script>
+</body>
+</html>
