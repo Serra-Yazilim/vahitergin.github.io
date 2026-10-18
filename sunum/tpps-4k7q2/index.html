@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow, noarchive" />
 <meta name="googlebot" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
-<meta name="description" content="Satınalmadan sevkiyata TPPS ve SAP Business One entegrasyonu: dört kısa süreç videosu." />
+<meta name="description" content="Satınalmadan sevkiyata ve kaliteye TPPS ve SAP Business One entegrasyonu: beş kısa süreç videosu." />
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,7 +35,7 @@ h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(30px,4.6vw,50px);line-
 .flow span.n{background:var(--surface);border:1px solid var(--border);border-radius:999px;padding:6px 12px}
 .flow span.a{color:var(--accent)}
 .stage{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:22px;margin-top:18px}
-.player{background:#000;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:0 40px 90px -40px rgba(0,0,0,.8)}
+.player{align-self:start;background:#000;border-radius:var(--radius);overflow:hidden;border:1px solid var(--border);box-shadow:0 40px 90px -40px rgba(0,0,0,.8)}
 .player video{display:block;width:100%;aspect-ratio:16/9;background:#000}
 .now{padding:16px 18px;background:var(--surface);border-top:1px solid var(--border)}
 .now .t{font-family:"Space Grotesk",sans-serif;font-size:20px;font-weight:600}
@@ -52,7 +52,7 @@ h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(30px,4.6vw,50px);line-
 .note{margin-top:14px;font-size:12.5px;color:var(--text-soft);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
 section.det{padding:46px 0 10px}
 h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;margin-bottom:16px}
-.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.cards{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
 .card .no{font-family:"Space Grotesk",sans-serif;color:var(--amber);font-weight:700}
 .card h3{font-family:"Space Grotesk",sans-serif;font-size:18px;margin:4px 0 8px}
@@ -66,6 +66,7 @@ h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;m
 .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:11px 18px;font-weight:600;font-size:14.5px;text-decoration:none;border:1px solid var(--border);background:var(--surface)}
 .btn.p{background:var(--accent);color:#06231f;border-color:var(--accent)}
 footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-soft);font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+@media (max-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:960px){.stage{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (max-width:560px){.wrap{padding:0 16px}.cards{grid-template-columns:1fr}.item img{width:108px}.lead{font-size:16px}header .tag{display:none}}
 </style>
@@ -80,8 +81,8 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
   <section class="hero">
     <div class="kicker">TPPS × SAP Business One</div>
     <h1>Satınalmadan sevkiyata, sahadaki her adım SAP'ye kendiliğinden yansısın.</h1>
-    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla dört temel sürecin uçtan uca nasıl çalıştığını kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır.</p>
-    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span></div>
+    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır.</p>
+    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span></div>
   </section>
 
   <div class="stage">
@@ -102,6 +103,7 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
       <div class="card"><div class="no">02</div><h3>Mal Kabul</h3><ul><li>Siparişe bağlı tedarikçi irsaliyesi</li><li>Her koliye ayrı barkod ve etiket</li><li>El terminalinde okutarak kabul</li><li>SAP'de siparişe bağlı, partili mal girişi</li></ul></div>
       <div class="card"><div class="no">03</div><h3>Üretim</h3><ul><li>TPPS'te üretim iş emri</li><li>Makinede koli etiketi basımı</li><li>Barkodla stoğa giriş</li><li>SAP'de üretim emri ve üretimden giriş</li></ul></div>
       <div class="card"><div class="no">04</div><h3>Sevkiyat</h3><ul><li>Açık siparişten sevk fişi</li><li>Terminalde okutarak yükleme, yanlış koliye anında uyarı</li><li>Çeki listesi ve irsaliye</li><li>SAP teslimatı ve koliden üretime izlenebilirlik</li></ul></div>
+      <div class="card"><div class="no">05</div><h3>Kalite</h3><ul><li>Ürün standardı ve toleranslar</li><li>Giriş kalite kontrol, lot ve iade</li><li>Makine başı ön kontrol ve tolerans denetimli ölçüm</li><li>Koliden hammaddeye izlenebilirlik raporu</li></ul></div>
     </div>
   </section>
 
@@ -118,7 +120,8 @@ const V=[
  {k:'satinalma',n:'Satınalma',du:'2:51',d:'Talep, departman onayı, teklif karşılaştırması, talep onayı ve tekliften sipariş.'},
  {k:'mal_kabul',n:'Mal Kabul',du:'3:15',d:'Siparişe bağlı irsaliye, koli barkodu, terminalle kabul ve SAP mal girişi.'},
  {k:'uretim',n:'Üretim',du:'2:48',d:'İş emri, makinede etiket, barkodla stoğa giriş ve SAP üretim kayıtları.'},
- {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'}];
+ {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'},
+ {k:'kalite',n:'Kalite',du:'2:49',d:'Ürün standardı, giriş kontrol, ön kontrol, tolerans denetimli ölçüm ve koli izlenebilirliği.'}];
 const vid=document.getElementById('vid'),list=document.getElementById('list');let cur=0;
 V.forEach((v,i)=>{const b=document.createElement('button');b.className='item';b.type='button';
   b.innerHTML=`<img src="v/${v.k}.jpg" alt="" loading="lazy"><div class="m"><div class="no">BÖLÜM ${i+1}</div><div class="nm">${v.n}</div><div class="du">${v.du}</div></div>`;
