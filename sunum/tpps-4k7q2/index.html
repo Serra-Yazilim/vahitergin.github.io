@@ -7,7 +7,7 @@
 <meta name="robots" content="noindex, nofollow, noarchive" />
 <meta name="googlebot" content="noindex, nofollow" />
 <meta name="referrer" content="no-referrer" />
-<meta name="description" content="SAP Business One tanıtımı, TPPS süreç videoları ve Serra Bilişim broşürleri." />
+<meta name="description" content="Satınalmadan sevkiyata ve kaliteye TPPS ve SAP Business One entegrasyonu: beş kısa süreç videosu." />
 <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,16 +49,6 @@ h1{font-family:"Space Grotesk",sans-serif;font-size:clamp(30px,4.6vw,50px);line-
 .item .no{font-size:11.5px;color:var(--accent);font-weight:700;letter-spacing:.08em}
 .item .nm{font-weight:600;font-size:15px;margin-top:2px}
 .item .du{font-size:12.5px;color:var(--text-soft);margin-top:2px}
-.bro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.bro a.pg{display:block;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:12px;text-decoration:none;transition:border-color .15s}
-.bro a.pg:hover{border-color:var(--accent)}
-.bro img{display:block;width:100%;height:auto;border-radius:8px;background:#fff}
-.bro .cp{display:flex;justify-content:space-between;align-items:center;margin-top:10px;font-size:14px}
-.bro .cp b{font-family:"Space Grotesk",sans-serif;font-size:16px}
-.bro .cp span{color:var(--text-soft)}
-section.brs{padding:46px 0 0}
-.brs .hd{display:flex;justify-content:space-between;align-items:flex-end;gap:12px;flex-wrap:wrap;margin-bottom:16px}
-.brs .hd h2{margin:0}
 .note{margin-top:14px;font-size:12.5px;color:var(--text-soft);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
 section.det{padding:46px 0 10px}
 h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;margin-bottom:16px}
@@ -78,7 +68,6 @@ h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;m
 footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-soft);font-size:12.5px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 @media (max-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media (max-width:960px){.stage{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (max-width:640px){.bro{grid-template-columns:1fr}}
 @media (max-width:560px){.wrap{padding:0 16px}.cards{grid-template-columns:1fr}.item img{width:108px}.lead{font-size:16px}header .tag{display:none}}
 </style>
 </head>
@@ -86,20 +75,20 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
 <div class="wrap">
   <header>
     <a href="https://serrabilisim.com" aria-label="Serra Bilişim"><img src="../../assets/logo-serra-light.png" alt="Serra Bilişim" width="170" height="34" /></a>
-    <span class="tag">Özel paylaşım · Videolar ve broşür</span>
+    <span class="tag">Özel paylaşım · Süreç videoları</span>
   </header>
 
   <section class="hero">
     <div class="kicker">TPPS × SAP Business One</div>
     <h1>Satınalmadan sevkiyata, sahadaki her adım SAP'ye kendiliğinden yansısın.</h1>
-    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır. Başlamadan önce SAP Business One ve Serra Bilişim hizmetlerini 2 dakikalık tanıtım filmiyle tanıyabilirsiniz.</p>
+    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır.</p>
     <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span></div>
   </section>
 
   <div class="stage">
     <div class="player">
-      <video id="vid" controls playsinline preload="metadata" poster="v/sap-b1-tanitim.jpg" src="v/sap-b1-tanitim.mp4"></video>
-      <div class="now"><div class="t" id="nowT">Tanıtım · SAP Business One</div><div class="d" id="nowD"></div></div>
+      <video id="vid" controls playsinline preload="metadata" poster="v/satinalma.jpg" src="v/satinalma.mp4"></video>
+      <div class="now"><div class="t" id="nowT">1 · Satınalma</div><div class="d" id="nowD"></div></div>
     </div>
     <div>
       <div class="list" id="list"></div>
@@ -118,14 +107,6 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
     </div>
   </section>
 
-  <section class="brs" id="brosur">
-    <div class="hd"><h2>Broşürler</h2><a class="btn" href="serra-bilisim-brosur.pdf" download>Broşürü indir (PDF, 1,4 MB)</a></div>
-    <div class="bro">
-      <a class="pg" href="serra-bilisim-brosur.pdf#page=1" target="_blank" rel="noopener"><img src="v/brosur-1.jpg" alt="SAP Business One · Yapay zekâ · Danışmanlık broşürü" loading="lazy" width="662" height="936" /><div class="cp"><b>SAP Business One</b><span>Yapay zekâ · danışmanlık · hizmetler</span></div></a>
-      <a class="pg" href="serra-bilisim-brosur.pdf#page=2" target="_blank" rel="noopener"><img src="v/brosur-2.jpg" alt="TPPS üretim yönetim yazılımı broşürü" loading="lazy" width="662" height="936" /><div class="cp"><b>TPPS</b><span>Ambalaj üretimi · modüller · koli etiketi</span></div></a>
-    </div>
-  </section>
-
   <div class="cta">
     <div><h3>Kendi verilerinizle canlı görmek ister misiniz?</h3><p>Süreçlerinize göre kısa bir canlı demo planlayalım.</p></div>
     <div class="btns"><a class="btn p" href="mailto:iletisim@serrabilisim.com?subject=TPPS%20%C3%97%20SAP%20Business%20One%20demo%20talebi">iletisim@serrabilisim.com</a><a class="btn" href="tel:+905303213033">+90 530 321 30 33</a></div>
@@ -136,19 +117,17 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
 
 <script>
 const V=[
- {k:'sap-b1-tanitim',n:'SAP Business One · Serra Bilişim',du:'1:57',t:'TANITIM',d:'SAP Business One, yapay zekâ çözümleri, Serra add-on\'ları ve uçtan uca hizmetler.'},
  {k:'satinalma',n:'Satınalma',du:'2:51',d:'Talep, departman onayı, teklif karşılaştırması, talep onayı ve tekliften sipariş.'},
  {k:'mal_kabul',n:'Mal Kabul',du:'3:15',d:'Siparişe bağlı irsaliye, koli barkodu, terminalle kabul ve SAP mal girişi.'},
  {k:'uretim',n:'Üretim',du:'2:48',d:'İş emri, makinede etiket, barkodla stoğa giriş ve SAP üretim kayıtları.'},
  {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'},
  {k:'kalite',n:'Kalite',du:'2:49',d:'Ürün standardı, giriş kontrol, ön kontrol, tolerans denetimli ölçüm ve koli izlenebilirliği.'}];
-const bi=i=>V.slice(0,i+1).filter(x=>!x.t).length;
 const vid=document.getElementById('vid'),list=document.getElementById('list');let cur=0;
 V.forEach((v,i)=>{const b=document.createElement('button');b.className='item';b.type='button';
-  b.innerHTML=`<img src="v/${v.k}.jpg" alt="" loading="lazy"><div class="m"><div class="no">${v.t||('BÖLÜM '+bi(i))}</div><div class="nm">${v.n}</div><div class="du">${v.du}</div></div>`;
+  b.innerHTML=`<img src="v/${v.k}.jpg" alt="" loading="lazy"><div class="m"><div class="no">BÖLÜM ${i+1}</div><div class="nm">${v.n}</div><div class="du">${v.du}</div></div>`;
   b.onclick=()=>sec(i,true);list.appendChild(b);});
 function sec(i,play){cur=i;const v=V[i];vid.poster=`v/${v.k}.jpg`;vid.src=`v/${v.k}.mp4`;
-  document.getElementById('nowT').textContent=v.t?`Tanıtım · ${v.n}`:`${bi(i)} · ${v.n}`;document.getElementById('nowD').textContent=v.d;
+  document.getElementById('nowT').textContent=`${i+1} · ${v.n}`;document.getElementById('nowD').textContent=v.d;
   [...list.children].forEach((c,j)=>c.classList.toggle('on',j===i));if(play){vid.play().catch(()=>{});}}
 vid.addEventListener('ended',()=>{if(cur<V.length-1)sec(cur+1,true);});
 sec(0,false);
