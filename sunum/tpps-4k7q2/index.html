@@ -62,7 +62,8 @@ section.brs{padding:46px 0 0}
 .note{margin-top:14px;font-size:12.5px;color:var(--text-soft);border:1px dashed var(--border);border-radius:12px;padding:10px 12px}
 section.det{padding:46px 0 10px}
 h2{font-family:"Space Grotesk",sans-serif;font-size:26px;letter-spacing:-.01em;margin-bottom:16px}
-.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.cards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+@media (max-width:1100px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
 .card .no{font-family:"Space Grotesk",sans-serif;color:var(--amber);font-weight:700}
 .card h3{font-family:"Space Grotesk",sans-serif;font-size:18px;margin:4px 0 8px}
@@ -92,7 +93,7 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
     <div class="kicker">TPPS × SAP Business One</div>
     <h1>Satınalmadan sevkiyata, sahadaki her adım SAP'ye kendiliğinden yansısın.</h1>
     <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını ve TPPS Portal ile hepsinin tarayıcıdan nasıl yönetildiğini kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır. Başlamadan önce SAP Business One ve Serra Bilişim hizmetlerini 2 dakikalık tanıtım filmiyle tanıyabilirsiniz.</p>
-    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span><span class="a">→</span><span class="n">Portal</span></div>
+    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span><span class="a">→</span><span class="n">Portal</span><span class="a">→</span><span class="n">El Terminali</span></div>
   </section>
 
   <div class="stage">
@@ -115,6 +116,7 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
       <div class="card"><div class="no">04</div><h3>Sevkiyat</h3><ul><li>Açık siparişten sevk fişi</li><li>Terminalde okutarak yükleme, yanlış koliye anında uyarı</li><li>Çeki listesi ve irsaliye</li><li>SAP teslimatı ve koliden üretime izlenebilirlik</li></ul></div>
       <div class="card"><div class="no">05</div><h3>Kalite</h3><ul><li>Ürün standardı ve toleranslar</li><li>Giriş kalite kontrol, lot ve iade</li><li>Makine başı ön kontrol ve tolerans denetimli ölçüm</li><li>Koliden hammaddeye izlenebilirlik raporu</li></ul></div>
       <div class="card"><div class="no">06</div><h3>TPPS Portal</h3><ul><li>Kurulumsuz, tarayıcıdan erişim; yetkiye göre menü</li><li>Canlı ana ekran ve salon panosu</li><li>Telefondan finans, kalite ve teknik onay</li><li>Otomatik rapor maili ve SAP B1 aktarım durumu</li></ul></div>
+      <div class="card"><div class="no">07</div><h3>El Terminali</h3><ul><li>Yetkiye göre menü, transferle inen iş emirleri</li><li>Koli okutarak stok sorgu ve bölme yerleştirme</li><li>Kurala bağlı paletleme ve barkodlu sayım</li><li>Set masasında yanlış kapak kontrolü</li></ul></div>
     </div>
   </section>
 
@@ -142,7 +144,8 @@ const V=[
  {k:'uretim',n:'Üretim',du:'2:48',d:'İş emri, makinede etiket, barkodla stoğa giriş ve SAP üretim kayıtları.'},
  {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'},
  {k:'kalite',n:'Kalite',du:'2:49',d:'Ürün standardı, giriş kontrol, ön kontrol, tolerans denetimli ölçüm ve koli izlenebilirliği.'},
- {k:'portal',n:'TPPS Portal',du:'2:27',d:'Tarayıcıdan TPPS: canlı ana ekran, salon panosu, telefondan onay, otomatik rapor maili ve SAP B1 durumu.'}];
+ {k:'portal',n:'TPPS Portal',du:'2:27',d:'Tarayıcıdan TPPS: canlı ana ekran, salon panosu, telefondan onay, otomatik rapor maili ve SAP B1 durumu.'},
+ {k:'terminal',n:'El Terminali',du:'2:29',d:'Stok sorgu, paletleme, bölme yerleştirme, barkodlu sayım ve set birleştirme masası.'}];
 const bi=i=>V.slice(0,i+1).filter(x=>!x.t).length;
 const vid=document.getElementById('vid'),list=document.getElementById('list');let cur=0;
 V.forEach((v,i)=>{const b=document.createElement('button');b.className='item';b.type='button';
