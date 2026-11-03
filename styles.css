@@ -924,6 +924,24 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; letter-spaci
 .footer__col { display: flex; flex-direction: column; gap: 9px; }
 .footer__col h4 { font-size: 14px; margin-bottom: 4px; }
 .footer__col a, .footer__col span { font-size: 14px; color: var(--text-soft); transition: color 0.2s ease; }
+.footer__addr { display: flex; flex-direction: column; font-style: normal; font-size: 14px; line-height: 1.6; color: var(--text-soft); }
+.footer__col .footer__addr span { font-size: inherit; color: inherit; }
+/* adres: geniş ekranda 2 satır, telefonda 3 dengeli satır */
+.footer__addr .al, .cta__addr .al { display: block; }
+.footer__addr .as, .cta__addr .as { white-space: nowrap; }
+@media (min-width: 1001px) {
+  .footer__grid { grid-template-columns: 1.3fr 0.85fr 0.95fr 1.7fr; }
+}
+@media (max-width: 1000px) {
+  .footer__addr { display: block; }
+  .footer__addr .al, .cta__addr .al { display: contents; }
+  .footer__addr .as1, .footer__addr .as4, .cta__addr .as1, .cta__addr .as4 { display: block; }
+}
+.cta__addr {
+  position: relative; display: flex; justify-content: center; align-items: center; gap: 10px;
+  margin: 24px auto 0; font-style: normal; font-size: 14.5px; line-height: 1.55; color: var(--text-soft); text-align: left;
+}
+.cta__addr svg { flex-shrink: 0; width: 18px; height: 18px; color: var(--accent); }
 .footer__col a:hover { color: var(--accent); }
 
 .footer__bottom {
@@ -1078,7 +1096,9 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; letter-spaci
 .footer__logo { display: block; height: 36px; width: auto; }
 .scene .footer__brand p { color: var(--text-soft); }
 .scene .footer__col h4 { color: #fff; }
-.scene .footer__col a, .scene .footer__col span { color: #93a4b1; }
+.scene .footer__col a, .scene .footer__col span, .scene .footer__addr { color: #93a4b1; }
+.scene .cta__addr { color: #b0bdc8; }
+.scene .cta__addr svg { color: #5eead4; }
 .scene .footer__col a:hover, .scene .footer__legal a:hover { color: #5eead4; }
 .scene .footer__bottom { border-top-color: rgba(255, 255, 255, 0.07); color: #7a8b98; }
 
