@@ -44,14 +44,89 @@
         "operatingSystem": "Web",
         "inLanguage": "tr-TR",
         "description": "SAP Business One ile entegre çalışan, Türkiye mevzuatına uyumlu bordro ve İK portalı.",
-        "publisher": { "@type": "Organization", "@id": "https://serrabilisim.com/#org", "name": "Serra Bilişim", "url": "https://serrabilisim.com/" }
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://serrabilisim.com/#org",
+          "name": "Serra Bilişim",
+          "url": "https://serrabilisim.com/"
+        },
+        "featureList": [
+          "Puantaj, fazla çalışma, izin ve avans yönetimi",
+          "Kıdem–ihbar, BES, sendika farkı ve sosyal haklar",
+          "Yasal parametreler ile otomatik vergi hesaplama",
+          "Yevmiye kaydı hazırlama ve SAP B1'e aktarım",
+          "Personel self-servis portalı ve doküman arşivi",
+          "Bordro e-posta gönderimi, onay akışları, yetkilendirme"
+        ],
+        "@id": "https://serrabilisim.com/urunler/serra-bordro/#app"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://serrabilisim.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://serrabilisim.com/#urunler" },
-          { "@type": "ListItem", "position": 3, "name": "Serra Bordro", "item": "https://serrabilisim.com/urunler/serra-bordro/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://serrabilisim.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ürünler",
+            "item": "https://serrabilisim.com/#urunler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Serra Bordro",
+            "item": "https://serrabilisim.com/urunler/serra-bordro/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://serrabilisim.com/urunler/serra-bordro/#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP Business One'da bordro modülü var mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SAP Business One, Türkiye mevzuatına özgü bordro hesaplamalarını standart olarak sunmaz. Serra Bordro, SAP B1 ile entegre çalışarak puantajdan yevmiye kaydına kadar bordro sürecini tamamlar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serra Bordro yevmiye kaydını SAP B1'e nasıl aktarır?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Bordro dönemi kapandığında Serra Bordro yevmiye kaydını hazırlar ve SAP Business One'a aktarır. Böylece bordro maliyeti muhasebeye elle girilmeden yansır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Hangi bordro hesaplamaları yapılır?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Puantaj, fazla çalışma, izin ve avans; kıdem ve ihbar tazminatı, BES, sendika farkı ve sosyal haklar. Vergi hesabı yasal parametrelerle otomatik yapılır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Personel kendi bordrosunu görebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Personel self-servis portalı üzerinden kendi bordrosunu ve belgelerini görür. Bordrolar ayrıca e-postayla da gönderilebilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serra Bordro web tabanlı mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Serra Bordro web tabanlı bir portaldır; tarayıcı üzerinden kullanılır, onay akışları ve kullanıcı bazlı yetkilendirme içerir."
+            }
+          }
         ]
       }
     ]
@@ -144,6 +219,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="prose">
+          <h2>SAP Business One ile bordro: neden ayrı bir çözüm gerekir?</h2>
+          <p>SAP Business One, Türkiye'ye özgü bordro hesaplamalarını standart olarak içermez. Bu yüzden birçok şirket bordroyu ayrı bir programda hesaplar, sonucu Excel'e alır ve muhasebe kaydını SAP B1'e elle girer. Her ay tekrarlanan bu aktarım, hem zaman kaybettirir hem de hata riskini artırır.</p>
+          <p>Serra Bordro bu boşluğu SAP Business One ile entegre çalışan web tabanlı bir bordro ve İK portalıyla kapatır. Puantaj, fazla çalışma, izin ve avans girişleri tek ekranda toplanır. Kıdem ve ihbar tazminatı, BES, sendika farkı ve sosyal haklar hesaplamaya dahil edilir; vergi hesabı yasal parametrelerle otomatik yapılır.</p>
+          <p>Bordro kapandığında yevmiye kaydı hazırlanır ve SAP Business One'a aktarılır. Muhasebe ekibi ayrı bir dosyayla uğraşmadan bordro maliyetini doğru hesaplara görür.</p>
+          <p>Personel kendi bordrosunu ve belgelerini self-servis portalından görür; bordrolar e-postayla gönderilebilir. Onay akışları ve yetkilendirme sayesinde kimin hangi bilgiyi göreceği ve onaylayacağı net biçimde tanımlanır.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">SSS</span>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>SAP Business One'da bordro modülü var mı?</summary>
+            <p>SAP Business One, Türkiye mevzuatına özgü bordro hesaplamalarını standart olarak sunmaz. Serra Bordro, SAP B1 ile entegre çalışarak puantajdan yevmiye kaydına kadar bordro sürecini tamamlar.</p>
+          </details>
+          <details>
+            <summary>Serra Bordro yevmiye kaydını SAP B1'e nasıl aktarır?</summary>
+            <p>Bordro dönemi kapandığında Serra Bordro yevmiye kaydını hazırlar ve SAP Business One'a aktarır. Böylece bordro maliyeti muhasebeye elle girilmeden yansır.</p>
+          </details>
+          <details>
+            <summary>Hangi bordro hesaplamaları yapılır?</summary>
+            <p>Puantaj, fazla çalışma, izin ve avans; kıdem ve ihbar tazminatı, BES, sendika farkı ve sosyal haklar. Vergi hesabı yasal parametrelerle otomatik yapılır.</p>
+          </details>
+          <details>
+            <summary>Personel kendi bordrosunu görebilir mi?</summary>
+            <p>Evet. Personel self-servis portalı üzerinden kendi bordrosunu ve belgelerini görür. Bordrolar ayrıca e-postayla da gönderilebilir.</p>
+          </details>
+          <details>
+            <summary>Serra Bordro web tabanlı mı?</summary>
+            <p>Evet. Serra Bordro web tabanlı bir portaldır; tarayıcı üzerinden kullanılır, onay akışları ve kullanıcı bazlı yetkilendirme içerir.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--alt">
       <div class="container">

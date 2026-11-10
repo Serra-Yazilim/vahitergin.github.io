@@ -44,14 +44,89 @@
         "operatingSystem": "Web",
         "inLanguage": "tr-TR",
         "description": "Banka ekstrelerini SAP Business One’a otomatik aktaran banka entegrasyon çözümü.",
-        "publisher": { "@type": "Organization", "@id": "https://serrabilisim.com/#org", "name": "Serra Bilişim", "url": "https://serrabilisim.com/" }
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://serrabilisim.com/#org",
+          "name": "Serra Bilişim",
+          "url": "https://serrabilisim.com/"
+        },
+        "featureList": [
+          "Otomatik hesap ekstresi çekme ve muhasebe eşleştirme",
+          "Toplu ödeme ve maaş talimatı gönderimi",
+          "DBS, doğrudan borçlandırma ve tahsilat servisleri",
+          "POS, sanal POS ve bulut tahsilat entegrasyonları",
+          "Çoklu banka, çoklu firma ve çoklu döviz desteği",
+          "Kural tabanlı otomatik muhasebe kaydı üretimi"
+        ],
+        "@id": "https://serrabilisim.com/urunler/serra-banka/#app"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://serrabilisim.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://serrabilisim.com/#urunler" },
-          { "@type": "ListItem", "position": 3, "name": "Serra Banka", "item": "https://serrabilisim.com/urunler/serra-banka/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://serrabilisim.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ürünler",
+            "item": "https://serrabilisim.com/#urunler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Serra Banka",
+            "item": "https://serrabilisim.com/urunler/serra-banka/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://serrabilisim.com/urunler/serra-banka/#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP Business One'a banka ekstresi otomatik aktarılabilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Serra Banka hesap ekstrelerini otomatik çeker, kural tabanlı eşleştirme ile cari ve hesaplarla eşleştirir ve muhasebe kaydını kendiliğinden üretir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "SAP B1'den bankaya ödeme talimatı gönderilebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Toplu ödeme ve maaş talimatları SAP Business One'dan çıkar ve bankaya gönderilir; talimatları internet şubesine ayrıca girmeye gerek kalmaz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serra Banka DBS ve sanal POS'u destekler mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. DBS, doğrudan borçlandırma ve tahsilat servislerinin yanı sıra POS, sanal POS ve bulut tahsilat entegrasyonları desteklenir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Birden fazla banka ve şirketle çalışır mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Serra Banka çoklu banka, çoklu firma ve çoklu döviz desteğine sahiptir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serra Banka nasıl kurulur?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Serra Banka SAP Business One add-on'u olarak çalışır. Kurulumda bankalarınız, hesaplarınız ve eşleştirme kurallarınız birlikte tanımlanır."
+            }
+          }
         ]
       }
     ]
@@ -146,6 +221,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="prose">
+          <h2>SAP Business One banka entegrasyonu nasıl çalışır?</h2>
+          <p>Banka hareketlerinin SAP Business One'a işlenmesi, finans ekiplerinin en çok zaman harcadığı işlerden biridir. Ekstreler bankadan indirilir, satır satır cari hesaplarla eşleştirilir ve muhasebe kaydı elle oluşturulur. Ödeme tarafında da talimatlar bankanın internet şubesine ayrıca girilir.</p>
+          <p>Serra Banka bu trafiği iki yönde otomatikleştirir. Hesap ekstreleri otomatik çekilir; kural tabanlı eşleştirme sayesinde hareketler ilgili cari ve hesaplarla eşleşir ve muhasebe kaydı kendiliğinden üretilir. Ekibiniz yalnızca kuralın tanımadığı istisnalara bakar.</p>
+          <p>Ödeme tarafında toplu ödeme ve maaş talimatları SAP Business One'dan bankaya gönderilir. DBS, doğrudan borçlandırma ve tahsilat servisleri ile POS, sanal POS ve bulut tahsilat entegrasyonları da aynı yapı içinde yönetilir.</p>
+          <p>Serra Banka çoklu banka, çoklu firma ve çoklu döviz ile çalışır. Birden fazla şirketi ve bankası olan gruplar tek merkezden mutabakat yapabilir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">SSS</span>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>SAP Business One'a banka ekstresi otomatik aktarılabilir mi?</summary>
+            <p>Evet. Serra Banka hesap ekstrelerini otomatik çeker, kural tabanlı eşleştirme ile cari ve hesaplarla eşleştirir ve muhasebe kaydını kendiliğinden üretir.</p>
+          </details>
+          <details>
+            <summary>SAP B1'den bankaya ödeme talimatı gönderilebilir mi?</summary>
+            <p>Evet. Toplu ödeme ve maaş talimatları SAP Business One'dan çıkar ve bankaya gönderilir; talimatları internet şubesine ayrıca girmeye gerek kalmaz.</p>
+          </details>
+          <details>
+            <summary>Serra Banka DBS ve sanal POS'u destekler mi?</summary>
+            <p>Evet. DBS, doğrudan borçlandırma ve tahsilat servislerinin yanı sıra POS, sanal POS ve bulut tahsilat entegrasyonları desteklenir.</p>
+          </details>
+          <details>
+            <summary>Birden fazla banka ve şirketle çalışır mı?</summary>
+            <p>Evet. Serra Banka çoklu banka, çoklu firma ve çoklu döviz desteğine sahiptir.</p>
+          </details>
+          <details>
+            <summary>Serra Banka nasıl kurulur?</summary>
+            <p>Serra Banka SAP Business One add-on'u olarak çalışır. Kurulumda bankalarınız, hesaplarınız ve eşleştirme kurallarınız birlikte tanımlanır.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--alt">
       <div class="container">

@@ -44,14 +44,89 @@
         "operatingSystem": "Web",
         "inLanguage": "tr-TR",
         "description": "SAP Business One için saha odaklı üretim takip ve kalite yönetim çözümü.",
-        "publisher": { "@type": "Organization", "@id": "https://serrabilisim.com/#org", "name": "Serra Bilişim", "url": "https://serrabilisim.com/" }
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://serrabilisim.com/#org",
+          "name": "Serra Bilişim",
+          "url": "https://serrabilisim.com/"
+        },
+        "featureList": [
+          "İş emri açma, operasyon ve çoklu iş emri yönetimi",
+          "Gantt ile üretim planlama, günlük ve haftalık çizelge",
+          "Barkodlu terminal girişleri, pick-list ve fason takibi",
+          "Kalite kontrol, checklist ve son kontrol formları",
+          "Arıza bildirimi, bakım planlama ve duruş analizi",
+          "Atölye TV ekranı ve yönetici dashboard'u"
+        ],
+        "@id": "https://serrabilisim.com/urunler/serra-uretim/#app"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://serrabilisim.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://serrabilisim.com/#urunler" },
-          { "@type": "ListItem", "position": 3, "name": "Serra Üretim", "item": "https://serrabilisim.com/urunler/serra-uretim/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://serrabilisim.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ürünler",
+            "item": "https://serrabilisim.com/#urunler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Serra Üretim",
+            "item": "https://serrabilisim.com/urunler/serra-uretim/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://serrabilisim.com/urunler/serra-uretim/#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP Business One üretim takibi için yeterli mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SAP Business One iş emri ve malzeme ihtiyacını yönetir; ancak sahadan anlık veri toplama, duruş analizi ve kalite formları için ek bir çözüm gerekir. Serra Üretim bu ihtiyacı SAP B1 ile entegre olarak karşılar."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Barkodlu terminal ile SAP B1'e üretim girişi yapılabilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Serra Üretim'de barkodlu terminal girişleri iş emirlerine anında işlenir; pick-list ve fason takibi de terminal üzerinden yapılır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Serra Üretim üretim planlama yapar mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Gantt ile üretim planlama yapılır; plan günlük ve haftalık çizelge olarak görüntülenir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kalite kontrol ve bakım nasıl yönetilir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kalite kontrol listeleri ve son kontrol formları kullanılır. Arıza bildirimi, bakım planlama ve duruş analizi aynı sistemde tutulur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Üretim durumu ekranda canlı izlenebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Atölye TV ekranı sahadaki ekibe, yönetici dashboard'u ise yönetime üretimin anlık durumunu gösterir."
+            }
+          }
         ]
       }
     ]
@@ -148,6 +223,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="prose">
+          <h2>SAP Business One'da üretim takibi: sahadan yönetime canlı veri</h2>
+          <p>SAP Business One'ın üretim modülü iş emri ve malzeme ihtiyacını yönetir. Ancak atölyede gerçekte ne olduğunu, yani hangi operasyonun ne zaman başladığını, nerede duruş yaşandığını ve hangi partinin kaliteden geçtiğini anlık görmek için sahadan veri toplamak gerekir. Bu veri çoğu şirkette kâğıt formlarla ya da gün sonunda elle girilir.</p>
+          <p>Serra Üretim bu boşluğu doldurur. İş emirleri açılır, operasyonlar ve çoklu iş emirleri yönetilir; Gantt ile üretim planı günlük ve haftalık çizelge olarak hazırlanır. Sahada barkodlu terminallerden yapılan girişler iş emirlerine anında işlenir; pick-list ve fason takibi de aynı yerden yürür.</p>
+          <p>Kalite tarafında kontrol listeleri ve son kontrol formları kullanılır. Arıza bildirimi, bakım planlama ve duruş analizi ile makinelerin neden durduğu kayıt altına alınır.</p>
+          <p>Atölye TV ekranı sahadaki ekibe hedefi ve gerçekleşeni gösterir; yönetici dashboard'u ise tüm üretimi tek ekranda özetler. Böylece üretim, gün sonu raporunu beklemeden canlı izlenir.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">SSS</span>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>SAP Business One üretim takibi için yeterli mi?</summary>
+            <p>SAP Business One iş emri ve malzeme ihtiyacını yönetir; ancak sahadan anlık veri toplama, duruş analizi ve kalite formları için ek bir çözüm gerekir. Serra Üretim bu ihtiyacı SAP B1 ile entegre olarak karşılar.</p>
+          </details>
+          <details>
+            <summary>Barkodlu terminal ile SAP B1'e üretim girişi yapılabilir mi?</summary>
+            <p>Evet. Serra Üretim'de barkodlu terminal girişleri iş emirlerine anında işlenir; pick-list ve fason takibi de terminal üzerinden yapılır.</p>
+          </details>
+          <details>
+            <summary>Serra Üretim üretim planlama yapar mı?</summary>
+            <p>Evet. Gantt ile üretim planlama yapılır; plan günlük ve haftalık çizelge olarak görüntülenir.</p>
+          </details>
+          <details>
+            <summary>Kalite kontrol ve bakım nasıl yönetilir?</summary>
+            <p>Kalite kontrol listeleri ve son kontrol formları kullanılır. Arıza bildirimi, bakım planlama ve duruş analizi aynı sistemde tutulur.</p>
+          </details>
+          <details>
+            <summary>Üretim durumu ekranda canlı izlenebilir mi?</summary>
+            <p>Evet. Atölye TV ekranı sahadaki ekibe, yönetici dashboard'u ise yönetime üretimin anlık durumunu gösterir.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--alt">
       <div class="container">

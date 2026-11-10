@@ -44,14 +44,89 @@
         "operatingSystem": "Web",
         "inLanguage": "tr-TR",
         "description": "SAP Business One verisini tek ekranda toplayan raporlama ve iş zekâsı panosu.",
-        "publisher": { "@type": "Organization", "@id": "https://serrabilisim.com/#org", "name": "Serra Bilişim", "url": "https://serrabilisim.com/" }
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://serrabilisim.com/#org",
+          "name": "Serra Bilişim",
+          "url": "https://serrabilisim.com/"
+        },
+        "featureList": [
+          "SAP sorgularını şablona çevirme, göreli tarih parametreleri (bugün, ay başı, yıl başı)",
+          "Sürükle-bırak pivot / matris tasarımı, kolon seçimi ve sıralama",
+          "Sütun, çizgi ve pasta grafik — önizlemede gördüğünüz, mailde gelen dosyayla birebir aynı",
+          "Günlük / haftalık / aylık zamanlama, Excel ve PDF olarak otomatik e-posta",
+          "Kullanıcı ve rol yönetimi (Admin / Contributor / Member / Viewer), SAP kullanıcılarından seçim",
+          "Kendi sunucunuzda çalışır, SAP veritabanına salt-okunur bağlanır — bulut yok, dışarı veri çıkmaz"
+        ],
+        "@id": "https://serrabilisim.com/urunler/panora/#app"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://serrabilisim.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://serrabilisim.com/#urunler" },
-          { "@type": "ListItem", "position": 3, "name": "Panora", "item": "https://serrabilisim.com/urunler/panora/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://serrabilisim.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ürünler",
+            "item": "https://serrabilisim.com/#urunler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Panora",
+            "item": "https://serrabilisim.com/urunler/panora/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://serrabilisim.com/urunler/panora/#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP Business One'da otomatik rapor nasıl gönderilir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standart SAP Business One'da sorgu sonuçlarını zamanlanmış olarak e-postayla göndermek için ek bir araç gerekir. Panora, Query Manager sorgularınızı şablona çevirir ve Excel ya da PDF raporu günlük, haftalık veya aylık olarak seçtiğiniz kişilere otomatik gönderir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Panora için yeni sorgu yazmam gerekir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Panora, SAP B1 Query Manager'da zaten kullandığınız sorgularla çalışır. Sorguyu şablona çevirir, tarih parametrelerini göreli hale getirir; pivot ve grafikler sürükle-bırak ile kurulur."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Panora SAP veritabanına veri yazar mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Panora SAP Business One veritabanına salt-okunur bağlanır; hiçbir kaydı değiştirmez ve sistem performansını etkileyecek bir yazma işlemi yapmaz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Panora bulutta mı çalışır?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Panora kendi sunucunuza kurulur. Veri şirket dışına çıkmaz, bu da KVKK uyumunu kolaylaştırır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Panora MS SQL ve SAP HANA ile çalışır mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Panora, SAP Business One'ın MS SQL Server ve SAP HANA sürümlerinde çalışır."
+            }
+          }
         ]
       }
     ]
@@ -161,6 +236,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="prose">
+          <h2>SAP Business One raporlama neden zorlaşır, Panora bunu nasıl çözer?</h2>
+          <p>SAP Business One'da veri eksik değildir; eksik olan, o veriyi her gün aynı biçimde ve doğru kişiye ulaştırmaktır. Çoğu şirkette raporlar Query Manager'da yazılmış sorgulardan elle Excel'e aktarılır, pivot yeniden kurulur ve e-postayla gönderilir. Bu döngü her gün tekrar eder, kişiye bağlıdır ve bir hata fark edilmeden yayılabilir.</p>
+          <p>Panora, SAP B1 Query Manager'da zaten tanımlı sorgularınızı alıp şablona çevirir. Bugün, ay başı, yıl başı gibi göreli tarih parametreleri sayesinde aynı rapor her gün güncel dönemi kendiliğinden getirir. Sürükle-bırak ile pivot ve matris tasarlar, sütun, çizgi ve pasta grafik eklersiniz. Önizlemede gördüğünüz, e-postada gelen Excel veya PDF dosyasıyla birebir aynıdır.</p>
+          <p>Raporlar günlük, haftalık veya aylık zamanlanır ve belirlediğiniz kişilere otomatik gönderilir. Kullanıcılar SAP kullanıcıları arasından seçilir; Admin, Contributor, Member ve Viewer rolleriyle kimin neyi göreceği ayrılır.</p>
+          <p>Panora kendi sunucunuzda çalışır ve SAP Business One veritabanına yalnızca okuma yetkisiyle bağlanır. Veri ambarı, ETL projesi ya da bulut aktarımı gerekmez; veriniz şirket dışına çıkmaz. Bu yapı hem kurulumu kısaltır hem de KVKK açısından işinizi kolaylaştırır.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">SSS</span>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>SAP Business One'da otomatik rapor nasıl gönderilir?</summary>
+            <p>Standart SAP Business One'da sorgu sonuçlarını zamanlanmış olarak e-postayla göndermek için ek bir araç gerekir. Panora, Query Manager sorgularınızı şablona çevirir ve Excel ya da PDF raporu günlük, haftalık veya aylık olarak seçtiğiniz kişilere otomatik gönderir.</p>
+          </details>
+          <details>
+            <summary>Panora için yeni sorgu yazmam gerekir mi?</summary>
+            <p>Hayır. Panora, SAP B1 Query Manager'da zaten kullandığınız sorgularla çalışır. Sorguyu şablona çevirir, tarih parametrelerini göreli hale getirir; pivot ve grafikler sürükle-bırak ile kurulur.</p>
+          </details>
+          <details>
+            <summary>Panora SAP veritabanına veri yazar mı?</summary>
+            <p>Hayır. Panora SAP Business One veritabanına salt-okunur bağlanır; hiçbir kaydı değiştirmez ve sistem performansını etkileyecek bir yazma işlemi yapmaz.</p>
+          </details>
+          <details>
+            <summary>Panora bulutta mı çalışır?</summary>
+            <p>Hayır. Panora kendi sunucunuza kurulur. Veri şirket dışına çıkmaz, bu da KVKK uyumunu kolaylaştırır.</p>
+          </details>
+          <details>
+            <summary>Panora MS SQL ve SAP HANA ile çalışır mı?</summary>
+            <p>Evet. Panora, SAP Business One'ın MS SQL Server ve SAP HANA sürümlerinde çalışır.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--alt">
       <div class="container">

@@ -44,14 +44,89 @@
         "operatingSystem": "Web",
         "inLanguage": "tr-TR",
         "description": "SAP Business One verisini WhatsApp üzerinden sorgulayan yapay zekâ asistanı.",
-        "publisher": { "@type": "Organization", "@id": "https://serrabilisim.com/#org", "name": "Serra Bilişim", "url": "https://serrabilisim.com/" }
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://serrabilisim.com/#org",
+          "name": "Serra Bilişim",
+          "url": "https://serrabilisim.com/"
+        },
+        "featureList": [
+          "Doğal dil ile cari ekstre, stok, satış ve tahsilat sorgusu",
+          "WhatsApp üzerinden tek dokunuşla satın alma onayı",
+          "e-Fatura ve irsaliye kesildiğinde müşteriye otomatik bildirim",
+          "Servis çağrısı açma ve otomatik durum bildirimi",
+          "Saha ekibi için CRM aktivitesi ve müşteri adayı kaydı",
+          "Sesli mesaj, müşteri portalı, TR / EN / AR dil desteği"
+        ],
+        "@id": "https://serrabilisim.com/urunler/sawbot/#app"
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Ana sayfa", "item": "https://serrabilisim.com/" },
-          { "@type": "ListItem", "position": 2, "name": "Ürünler", "item": "https://serrabilisim.com/#urunler" },
-          { "@type": "ListItem", "position": 3, "name": "SAWBot", "item": "https://serrabilisim.com/urunler/sawbot/" }
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Ana sayfa",
+            "item": "https://serrabilisim.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Ürünler",
+            "item": "https://serrabilisim.com/#urunler"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "SAWBot",
+            "item": "https://serrabilisim.com/urunler/sawbot/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://serrabilisim.com/urunler/sawbot/#sss",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "SAP Business One WhatsApp ile entegre edilebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. SAWBot, WhatsApp Cloud API üzerinden SAP Business One'a bağlanır; kullanıcılar WhatsApp'tan soru sorar, cevap SAP B1'den gelir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "SAWBot ile hangi bilgiler sorgulanabilir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cari ekstre, stok, satış ve tahsilat bilgileri normal Türkçe ile sorgulanabilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "WhatsApp'tan SAP B1 onayı verilebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Satın alma belgeleri WhatsApp üzerinden tek dokunuşla onaylanabilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Müşterilere otomatik bildirim gönderilebilir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. e-Fatura veya irsaliye kesildiğinde müşteriye WhatsApp'tan otomatik bildirim gider; servis çağrılarının durumu da otomatik bildirilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "SAWBot hangi dilleri destekler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "SAWBot Türkçe, İngilizce ve Arapça çalışır; sesli mesajları da anlar."
+            }
+          }
         ]
       }
     ]
@@ -140,6 +215,50 @@
         </div>
       </div>
     </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="prose">
+          <h2>SAP Business One verisine WhatsApp'tan ulaşmak</h2>
+          <p>Sahadaki satış temsilcisi bir müşterinin bakiyesini, depo sorumlusu bir ürünün stokunu, yönetici dünkü satışı öğrenmek istediğinde genellikle birini arar ya da bilgisayar başına geçmesini bekler. SAP Business One'daki veri oradadır, ama ona ulaşmak için ekran, lisans ve eğitim gerekir.</p>
+          <p>SAWBot bu bilgiyi herkesin zaten kullandığı WhatsApp'a taşır. Kullanıcı normal Türkçe ile sorar; SAWBot yapay zekâ ile soruyu anlar, SAP Business One'dan cevabı getirir. Cari ekstre, stok, satış ve tahsilat bilgisi birkaç saniyede gelir. Ayrı bir uygulama kurmaya gerek yoktur.</p>
+          <p>SAWBot yalnızca sorgu için değildir. Satın alma belgeleri WhatsApp'tan tek dokunuşla onaylanabilir. e-Fatura veya irsaliye kesildiğinde müşteriye otomatik bildirim gider; servis çağrısı açılabilir ve durumu otomatik bildirilir. Saha ekibi CRM aktivitesi ve müşteri adayı kaydını da buradan girebilir.</p>
+          <p>Sesli mesaj desteği ve müşteri portalı bulunur; SAWBot Türkçe, İngilizce ve Arapça çalışır. Altyapıda WhatsApp Cloud API kullanılır.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="sss">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">SSS</span>
+          <h2>Sık sorulan sorular</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>SAP Business One WhatsApp ile entegre edilebilir mi?</summary>
+            <p>Evet. SAWBot, WhatsApp Cloud API üzerinden SAP Business One'a bağlanır; kullanıcılar WhatsApp'tan soru sorar, cevap SAP B1'den gelir.</p>
+          </details>
+          <details>
+            <summary>SAWBot ile hangi bilgiler sorgulanabilir?</summary>
+            <p>Cari ekstre, stok, satış ve tahsilat bilgileri normal Türkçe ile sorgulanabilir.</p>
+          </details>
+          <details>
+            <summary>WhatsApp'tan SAP B1 onayı verilebilir mi?</summary>
+            <p>Evet. Satın alma belgeleri WhatsApp üzerinden tek dokunuşla onaylanabilir.</p>
+          </details>
+          <details>
+            <summary>Müşterilere otomatik bildirim gönderilebilir mi?</summary>
+            <p>Evet. e-Fatura veya irsaliye kesildiğinde müşteriye WhatsApp'tan otomatik bildirim gider; servis çağrılarının durumu da otomatik bildirilir.</p>
+          </details>
+          <details>
+            <summary>SAWBot hangi dilleri destekler?</summary>
+            <p>SAWBot Türkçe, İngilizce ve Arapça çalışır; sesli mesajları da anlar.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
 
     <section class="section section--alt">
       <div class="container">
