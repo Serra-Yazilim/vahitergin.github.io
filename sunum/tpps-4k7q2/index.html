@@ -92,8 +92,8 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
   <section class="hero">
     <div class="kicker">TPPS × SAP Business One</div>
     <h1>Satınalmadan sevkiyata, sahadaki her adım SAP'ye kendiliğinden yansısın.</h1>
-    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını ve TPPS Portal ile hepsinin tarayıcıdan nasıl yönetildiğini kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır. Başlamadan önce SAP Business One ve Serra Bilişim hizmetlerini 2 dakikalık tanıtım filmiyle tanıyabilirsiniz.</p>
-    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span><span class="a">→</span><span class="n">Portal</span><span class="a">→</span><span class="n">El Terminali</span></div>
+    <p class="lead">TPPS üretim ve depo yönetimi, el terminali ve SAP Business One entegrasyonuyla beş temel sürecin uçtan uca nasıl çalıştığını TPPS Portal ile hepsinin tarayıcıdan, TPPS Bot ile WhatsApp'tan nasıl yönetildiğini kısa videolarla izleyin. Videolar sırayla izlendiğinde tek bir hikâyeyi anlatır. Başlamadan önce SAP Business One ve Serra Bilişim hizmetlerini 2 dakikalık tanıtım filmiyle tanıyabilirsiniz.</p>
+    <div class="flow"><span class="n">Satınalma</span><span class="a">→</span><span class="n">Mal Kabul</span><span class="a">→</span><span class="n">Üretim</span><span class="a">→</span><span class="n">Sevkiyat</span><span class="a">→</span><span class="n">Kalite</span><span class="a">→</span><span class="n">Portal</span><span class="a">→</span><span class="n">El Terminali</span><span class="a">→</span><span class="n">WhatsApp</span></div>
   </section>
 
   <div class="stage">
@@ -117,6 +117,7 @@ footer{border-top:1px solid var(--border);padding:20px 0 34px;color:var(--text-s
       <div class="card"><div class="no">05</div><h3>Kalite</h3><ul><li>Ürün standardı ve toleranslar</li><li>Giriş kalite kontrol, lot ve iade</li><li>Makine başı ön kontrol ve tolerans denetimli ölçüm</li><li>Koliden hammaddeye izlenebilirlik raporu</li></ul></div>
       <div class="card"><div class="no">06</div><h3>TPPS Portal</h3><ul><li>Kurulumsuz, tarayıcıdan erişim; yetkiye göre menü</li><li>Canlı ana ekran ve salon panosu</li><li>Telefondan finans, kalite ve teknik onay</li><li>Otomatik rapor maili ve SAP B1 aktarım durumu</li></ul></div>
       <div class="card"><div class="no">07</div><h3>El Terminali</h3><ul><li>Yetkiye göre menü, transferle inen iş emirleri</li><li>Koli okutarak stok sorgu ve bölme yerleştirme</li><li>Kurala bağlı paletleme ve barkodlu sayım</li><li>Set masasında yanlış kapak kontrolü</li></ul></div>
+      <div class="card"><div class="no">08</div><h3>WhatsApp · TPPS Bot</h3><ul><li>Fabrika özeti ve makine durumu WhatsApp'tan</li><li>Serbest soru ve sesli mesajı yapay zekâ anlar</li><li>Onaylı iş emri durdurma, sonlandırma</li><li>Kayıtlı numara, modül yetkisi, tam log</li></ul></div>
     </div>
   </section>
 
@@ -145,7 +146,8 @@ const V=[
  {k:'sevkiyat',n:'Sevkiyat',du:'2:34',d:'Sevk fişi, okutarak yükleme, çeki listesi ve SAP teslimatı.'},
  {k:'kalite',n:'Kalite',du:'2:49',d:'Ürün standardı, giriş kontrol, ön kontrol, tolerans denetimli ölçüm ve koli izlenebilirliği.'},
  {k:'portal',n:'TPPS Portal',du:'2:27',d:'Tarayıcıdan TPPS: canlı ana ekran, salon panosu, telefondan onay, otomatik rapor maili ve SAP B1 durumu.'},
- {k:'terminal',n:'El Terminali',du:'2:29',d:'Stok sorgu, paletleme, bölme yerleştirme, barkodlu sayım ve set birleştirme masası.'}];
+ {k:'terminal',n:'El Terminali',du:'2:29',d:'Stok sorgu, paletleme, bölme yerleştirme, barkodlu sayım ve set birleştirme masası.'},
+ {k:'whatsapp',n:'WhatsApp · TPPS Bot',du:'2:22',d:'Fabrika özeti, makine durumu, serbest ve sesli soru, onaylı iş emri işlemleri, stok ve sipariş sorgusu.'}];
 const bi=i=>V.slice(0,i+1).filter(x=>!x.t).length;
 const vid=document.getElementById('vid'),list=document.getElementById('list');let cur=0;
 V.forEach((v,i)=>{const b=document.createElement('button');b.className='item';b.type='button';
