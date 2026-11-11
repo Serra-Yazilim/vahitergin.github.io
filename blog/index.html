@@ -130,25 +130,15 @@
           <span class="section__tag">Blog</span>
           <h1>SAP Business One rehberleri ve blog</h1>
           <p class="blog-hero__lead">SAP Business One kurulumu, danışmanlık, e-Dönüşüm, bordro, raporlama ve yapay zekâ üzerine sahadan edindiğimiz bilgileri paylaşıyoruz.</p>
-          <div class="cat-filter" role="group" aria-label="Kategoriye göre filtrele">
-            <button type="button" aria-pressed="true" data-filter="*">Tümü</button>
-            <button type="button" aria-pressed="false" data-filter="Kurulum & Danışmanlık">Kurulum & Danışmanlık</button>
-            <button type="button" aria-pressed="false" data-filter="e-Dönüşüm">e-Dönüşüm</button>
-            <button type="button" aria-pressed="false" data-filter="Finans & Bordro">Finans & Bordro</button>
-            <button type="button" aria-pressed="false" data-filter="Raporlama">Raporlama</button>
-            <button type="button" aria-pressed="false" data-filter="Yapay Zekâ">Yapay Zekâ</button>
-            <button type="button" aria-pressed="false" data-filter="Teknik">Teknik</button>
-          </div>
         </div>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
       <div class="container">
-        <div class="post-grid" id="postGrid">
-          <a class="post-card post-card--feature" href="/blog/sap-business-one-kurulumu/" data-cat="Kurulum & Danışmanlık">
+          <a class="post-card post-card--feature" href="/blog/sap-business-one-kurulumu/">
             <div class="post-card__body">
-              <span class="post-card__cat">Öne çıkan · Kurulum & Danışmanlık</span>
+              <span class="post-card__cat">Öne çıkan · SAP Business One</span>
               <h3>SAP Business One kurulumu: adım adım süreç, süre ve maliyet</h3>
               <p>SAP B1 projesinin 5 aşaması, MS SQL / HANA seçimi, lisans türleri, süre ve maliyet etkenleri, canlıya geçiş kontrol listesi.</p>
               <div class="post-card__meta"><span>Vahit Ergin</span><span>11 Kasım 2026</span><span>6 dk okuma</span></div>
@@ -163,8 +153,25 @@
               </div>
             </div>
           </a>
-          <div class="post-card post-card--soon" data-cat="Kurulum & Danışmanlık">
-            <span class="post-card__cat">Kurulum & Danışmanlık</span>
+        <div class="cat-filter cat-filter--below" role="group" aria-label="Kategoriye göre filtrele">
+          <button type="button" aria-pressed="true" data-filter="*">Tümü</button>
+            <button type="button" aria-pressed="false" data-filter="SAP Business One">SAP Business One</button>
+            <button type="button" aria-pressed="false" data-filter="e-Dönüşüm">e-Dönüşüm</button>
+            <button type="button" aria-pressed="false" data-filter="Finans & Bordro">Finans & Bordro</button>
+            <button type="button" aria-pressed="false" data-filter="Raporlama">Raporlama</button>
+            <button type="button" aria-pressed="false" data-filter="Yapay Zekâ">Yapay Zekâ</button>
+            <button type="button" aria-pressed="false" data-filter="Teknik">Teknik</button>
+        </div>
+        <div class="post-grid" id="postGrid">
+          <div class="post-empty" id="postEmpty" hidden></div>
+          <a class="post-card" href="/blog/sap-business-one-kurulumu/" data-cat="SAP Business One" data-feat="1" hidden>
+            <span class="post-card__cat">SAP Business One</span>
+            <h3>SAP Business One kurulumu: adım adım süreç, süre ve maliyet</h3>
+            <p>SAP B1 projesinin 5 aşaması, MS SQL / HANA seçimi, lisans türleri, süre ve maliyet etkenleri, canlıya geçiş kontrol listesi.</p>
+            <div class="post-card__meta"><span>11 Kasım 2026</span><span>6 dk okuma</span></div>
+          </a>
+          <div class="post-card post-card--soon" data-cat="SAP Business One">
+            <span class="post-card__cat">SAP Business One</span>
             <h3>SAP Business One nedir? Modüller, fiyat ve kimler için uygun</h3>
             <span class="post-card__badge">Yakında</span>
           </div>
@@ -193,7 +200,6 @@
             <h3>SAP B1 ile bordro: ayrı program mı, entegre çözüm mü?</h3>
             <span class="post-card__badge">Yakında</span>
           </div>
-          <div class="post-empty" id="postEmpty" hidden>Bu kategorideki yazılar yakında yayında.</div>
         </div>
       </div>
     </section>
@@ -273,13 +279,17 @@
       var empty = document.getElementById("postEmpty");
       btns.forEach(function (b) {
         b.addEventListener("click", function () {
-          var f = b.getAttribute("data-filter"), shown = 0;
+          var f = b.getAttribute("data-filter"), posts = 0, soon = 0;
           btns.forEach(function (x) { x.setAttribute("aria-pressed", String(x === b)); });
           cards.forEach(function (c) {
-            var ok = f === "*" || c.getAttribute("data-cat") === f;
-            c.hidden = !ok; if (ok) shown++;
+            var ok = f === "*" ? !c.hasAttribute("data-feat") : c.getAttribute("data-cat") === f;
+            c.hidden = !ok;
+            if (ok) { if (c.classList.contains("post-card--soon")) soon++; else posts++; }
           });
-          empty.hidden = shown > 0;
+          empty.hidden = posts > 0 || f === "*";
+          empty.textContent = soon > 0
+            ? "Bu kategorideki ilk yazılar hazırlanıyor. Yakında yayınlanacak konular:"
+            : "Bu kategorideki yazılar yakında yayında.";
         });
       });
     })();

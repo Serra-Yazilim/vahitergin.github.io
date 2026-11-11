@@ -1302,6 +1302,7 @@ h1, h2, h3, h4 { font-family: "Space Grotesk", "Inter", sans-serif; letter-spaci
 .blog-hero__lead { margin-top: 18px; color: var(--text-soft); font-size: clamp(16px, 1.8vw, 18.5px); max-width: 720px; }
 
 .cat-filter { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 30px; }
+.cat-filter--below { margin: 40px 0 24px; padding-top: 32px; border-top: 1px solid var(--border); }
 .cat-filter button {
   font: inherit; font-size: 14px; font-weight: 500; cursor: pointer;
   padding: 8px 15px; border-radius: 999px;
@@ -1331,6 +1332,7 @@ a.post-card:hover { transform: translateY(-4px); border-color: var(--accent); bo
 
 .post-card--feature {
   grid-column: 1 / -1;
+  margin-bottom: 8px;
   display: grid; grid-template-columns: 1.15fr 1fr; gap: 0; padding: 0; overflow: hidden;
 }
 .post-card--feature .post-card__body { padding: clamp(26px, 3.4vw, 44px); display: flex; flex-direction: column; }
@@ -1355,7 +1357,8 @@ a.post-card:hover { transform: translateY(-4px); border-color: var(--accent); bo
   display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; flex-shrink: 0;
   background: linear-gradient(140deg, #5eead4, #0f766e); color: #05241f; font-size: 13px;
 }
-.post-empty { grid-column: 1 / -1; text-align: center; padding: 40px 20px; color: var(--text-soft); border: 1px dashed var(--border); border-radius: var(--radius); }
+#postGrid [hidden] { display: none !important; }
+.post-empty { grid-column: 1 / -1; text-align: center; padding: 18px 20px; color: var(--text-soft); background: var(--bg-alt); border: 1px solid var(--border); border-radius: 14px; }
 
 /* ----- Yazı sayfası ----- */
 .article-head { max-width: 860px; }
