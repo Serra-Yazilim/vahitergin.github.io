@@ -19,6 +19,11 @@
 - [SAP Business One add-on geliştirme](https://serrabilisim.com/hizmetler/sap-business-one-add-on-gelistirme/): Özel ekranlar, iş kuralları, onay akışları, raporlar, web portalları ve otomasyon; DI API, UI API ve Service Layer ile.
 - [SAP Business One entegrasyonu](https://serrabilisim.com/hizmetler/sap-business-one-entegrasyon/): E-ticaret, banka, GİB e-Belge, lojistik, üretim terminalleri, WhatsApp ve üçüncü parti yazılımlarla veri alışverişi.
 
+## Blog
+
+- [SAP Business One kurulumu: adım adım süreç, süre ve maliyet](https://serrabilisim.com/blog/sap-business-one-kurulumu/): SAP B1 projesinin 5 aşaması, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi.
+- [Blog](https://serrabilisim.com/blog/): SAP Business One rehberleri ve yazılar.
+
 ## Diğer
 
 - [Ana sayfa ve sık sorulan sorular](https://serrabilisim.com/#sss): SAP Business One ve Serra ürünleri hakkında sık sorulan sorular.

@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Business One Kurulumu: Adım Adım Süreç, Süre ve Maliyet — Serra Bilişim</title>
+  <meta name="description" content="SAP Business One kurulumu nasıl yapılır? 5 aşamada SAP B1 projesi, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi." />
+  <meta name="author" content="Vahit Ergin" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="canonical" href="https://serrabilisim.com/blog/sap-business-one-kurulumu/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Serra Bilişim" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:url" content="https://serrabilisim.com/blog/sap-business-one-kurulumu/" />
+  <meta property="og:title" content="SAP Business One Kurulumu: Adım Adım Süreç, Süre ve Maliyet — Serra Bilişim" />
+  <meta property="og:description" content="SAP Business One kurulumu nasıl yapılır? 5 aşamada SAP B1 projesi, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi." />
+  <meta property="og:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-kurulumu.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-kurulumu.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/icon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-kurulumu/#post",
+      "headline": "SAP Business One Kurulumu: Adım Adım Süreç, Süre ve Maliyet",
+      "description": "SAP Business One kurulumu nasıl yapılır? 5 aşamada SAP B1 projesi, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi.",
+      "image": "https://serrabilisim.com/assets/og/blog-sap-business-one-kurulumu.png",
+      "datePublished": "2026-11-11",
+      "dateModified": "2026-11-11",
+      "inLanguage": "tr-TR",
+      "wordCount": 1215,
+      "articleSection": "Kurulum & Danışmanlık",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://serrabilisim.com/blog/sap-business-one-kurulumu/"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://serrabilisim.com/#vahit-ergin",
+        "name": "Vahit Ergin",
+        "jobTitle": "Kurucu, Yazılım Mühendisi",
+        "worksFor": {
+          "@id": "https://serrabilisim.com/#org"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/vahitergin",
+          "https://github.com/VahitErgin",
+          "https://x.com/vahitergin1"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://serrabilisim.com/#org",
+        "name": "Serra Bilişim",
+        "url": "https://serrabilisim.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://serrabilisim.com/assets/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana sayfa",
+          "item": "https://serrabilisim.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://serrabilisim.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAP Business One kurulumu",
+          "item": "https://serrabilisim.com/blog/sap-business-one-kurulumu/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-kurulumu/#sss",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SAP Business One kurulumu ne kadar sürer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Standart süreçli, tek şirketli projeler genellikle birkaç hafta; üretim, çok depo veya birden fazla şirket içeren projeler birkaç ay sürer. Kesin takvim ihtiyaç analizinden sonra çıkarılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP Business One hangi veritabanlarıyla çalışır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SAP Business One, Microsoft SQL Server ve SAP HANA veritabanlarıyla çalışır. MS SQL Windows Server üzerinde, SAP HANA ise Linux üzerinde çalışır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP Business One kurulum maliyetini ne belirler?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Toplam maliyet lisans, altyapı ve danışmanlık hizmetinden oluşur. Kullanıcı ve şirket sayısı, kullanılacak modüller, veri göçü, Türkiye'ye özgü ihtiyaçlar (e-Fatura, bordro, banka) ve entegrasyonlar maliyeti belirleyen başlıca etkenlerdir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP Business One'a eski programdaki veriler aktarılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Cari kartlar, stok kartları, açılış bakiyeleri ve açık belgeler şablonlara hazırlanıp Data Transfer Workbench (DTW) gibi araçlarla aktarılır. Aktarımdan önce verinin temizlenmesi önerilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP Business One lisansları nereden alınır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SAP Business One lisansları SAP iş ortakları üzerinden satın alınır. Professional ve Limited gibi farklı kullanıcı lisans türleri vardır; doğru lisans karışımı kimin hangi ekranı kullanacağına göre belirlenir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP Business One'da e-Fatura nasıl kullanılır?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SAP Business One'da e-Fatura, e-Arşiv ve e-İrsaliye için bir entegrasyon çözümü gerekir. Serra e-Dönüşüm ile belgeler SAP B1 içinden oluşturulup özel entegratör üzerinden gönderilir."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand">
+        <img class="nav__logo nav__logo--day" src="/assets/logo-serra.png" alt="Serra Bilişim" width="200" height="40" />
+        <img class="nav__logo nav__logo--night" src="/assets/logo-serra-light.png" alt="" aria-hidden="true" width="200" height="40" />
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="/#urunler">Ürünler</a>
+        <a href="/#hizmetler">Hizmetler</a>
+        <a href="/#neden">Neden Serra</a>
+        <a href="/#hakkimizda">Hakkımızda</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#iletisim">İletişim</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="/#iletisim">Demo talep et</a>
+      </nav>
+
+      <div class="nav__tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">
+          <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <section class="section" style="padding-bottom:clamp(30px,4vw,48px)">
+      <div class="container">
+        <nav class="crumbs" aria-label="Site haritası">
+          <a href="/">Ana sayfa</a>
+          <span aria-hidden="true">/</span>
+          <a href="/blog/">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">SAP Business One kurulumu</span>
+        </nav>
+        <header class="article-head">
+          <span class="section__tag">Kurulum & Danışmanlık</span>
+          <h1>SAP Business One kurulumu: adım adım süreç, süre ve maliyet</h1>
+          <p class="article-head__lead">SAP Business One'ı (SAP B1) şirketinize kurmayı düşünüyorsanız sürecin nasıl ilerlediğini, ne kadar sürdüğünü ve maliyeti neyin belirlediğini bu rehberde adım adım anlattık.</p>
+          <div class="byline">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <div class="byline__name"><a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener author">Vahit Ergin</a></div>
+              <div class="byline__meta">
+                <time datetime="2026-11-11">11 Kasım 2026</time> · 6 dk okuma
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container article-layout">
+        <aside class="toc" aria-label="İçindekiler">
+          <div class="toc__title">İçindekiler</div>
+          <details open id="tocDetails">
+            <summary>İçindekiler</summary>
+            <ol>
+              <li><a href="#kurulum-nedir">SAP Business One kurulumu neleri kapsar?</a></li>
+              <li><a href="#asamalar">Adım adım SAP Business One kurulum aşamaları</a></li>
+              <li><a href="#altyapi">Sunucu ve veritabanı: MS SQL mi, SAP HANA mı?</a></li>
+              <li><a href="#lisans">SAP Business One lisans türleri</a></li>
+              <li><a href="#sure">SAP Business One kurulumu ne kadar sürer?</a></li>
+              <li><a href="#maliyet">Kurulum maliyetini neler belirler?</a></li>
+              <li><a href="#kontrol-listesi">Canlıya geçiş öncesi kontrol listesi</a></li>
+              <li><a href="#hatalar">Sık yapılan hatalar</a></li>
+              <li><a href="#sss">Sık sorulan sorular</a></li>
+            </ol>
+          </details>
+        </aside>
+        <article class="article">
+<div class="summary-box">
+  <h2>Bu yazıda</h2>
+  <ul>
+    <li>SAP Business One kurulumunun 5 aşaması ve her aşamada ne yapıldığı</li>
+    <li>Sunucu, veritabanı (MS SQL / SAP HANA) ve lisans seçimi</li>
+    <li>Kurulum süresini ve maliyeti belirleyen etkenler</li>
+    <li>Canlıya geçiş öncesi kontrol listesi ve sık yapılan hatalar</li>
+  </ul>
+</div>
+
+<h2 id="kurulum-nedir">SAP Business One kurulumu neleri kapsar?</h2>
+<p>"SAP Business One kurulumu" denince çoğu zaman yalnızca programın sunucuya yüklenmesi akla gelir. Oysa teknik kurulum işin küçük bir parçasıdır. Asıl iş, SAP Business One'ı (SAP B1) şirketin gerçek iş akışına göre ayarlamak, eski sistemdeki veriyi doğru biçimde taşımak ve kullanıcıların yeni sistemle günlük işini yapabilir hale gelmesini sağlamaktır.</p>
+<p>Başarılı bir SAP B1 projesi genellikle şu dört başlığı birlikte ele alır:</p>
+<ul>
+  <li><strong>Altyapı:</strong> sunucu, veritabanı, lisans ve kullanıcı bilgisayarları</li>
+  <li><strong>Yapılandırma:</strong> hesap planı, belge numaraları, depo, fiyat listeleri, onay süreçleri ve yetkiler</li>
+  <li><strong>Veri göçü:</strong> cari kartlar, stok kartları, açılış bakiyeleri ve açık belgeler</li>
+  <li><strong>İnsan:</strong> eğitim, test ve canlıya geçiş desteği</li>
+</ul>
+
+<h2 id="asamalar">Adım adım SAP Business One kurulum aşamaları</h2>
+<p>SAP'nin önerdiği uygulama yöntemi ve sahadaki pratik, projeyi beş aşamada ele alır. Aşamaların adı danışmandan danışmana değişebilir; içerik büyük ölçüde aynıdır.</p>
+
+<div class="phase">
+  <h3><small>Aşama 1</small> Proje hazırlığı</h3>
+  <p>Projenin kapsamı, ekibi ve takvimi belirlenir. Şirket tarafında karar verebilecek bir proje sorumlusu atanır; her departmandan bir "anahtar kullanıcı" seçilir.</p>
+  <ul>
+    <li>Hangi departmanların ve şirketlerin dahil olacağı</li>
+    <li>Canlıya geçiş tarihi (çoğunlukla dönem ya da yıl başı)</li>
+    <li>Lisans sayısı ve türleri</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <h3><small>Aşama 2</small> İhtiyaç analizi (iş planı)</h3>
+  <p>Satış, satın alma, stok, üretim, finans ve raporlama süreçleri tek tek konuşulur. Standart SAP B1'in nerede yettiği, nerede ek geliştirme ya da hazır ürün gerektiği bu aşamada netleşir. Sonuç, yazılı bir analiz dokümanıdır.</p>
+  <ul>
+    <li>Mevcut süreçlerin ve belgelerin incelenmesi</li>
+    <li>Türkiye'ye özgü ihtiyaçlar: e-Fatura, e-Arşiv, e-İrsaliye, e-Defter, bordro, banka</li>
+    <li>Entegre edilecek sistemler: e-ticaret, banka, üretim terminalleri, lojistik</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <h3><small>Aşama 3</small> Kurulum, yapılandırma ve veri göçü</h3>
+  <p>Sunucu ve veritabanı kurulur, SAP Business One sunucu bileşenleri ve istemciler yüklenir. Şirket veritabanı Türkiye lokalizasyonu ile açılır; hesap planı, belge seri numaraları, depolar, kullanıcılar ve yetkiler tanımlanır.</p>
+  <ul>
+    <li>Ana verilerin (cari, stok kartı, fiyat listesi) şablonlara hazırlanması</li>
+    <li>Verinin Data Transfer Workbench (DTW) gibi araçlarla aktarılması</li>
+    <li>Gerekli add-on'ların ve entegrasyonların kurulması</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <h3><small>Aşama 4</small> Test ve eğitim</h3>
+  <p>Gerçek senaryolar test şirketinde baştan sona denenir: tekliften faturaya, satın almadan ödemeye, iş emrinden stok girişine. Anahtar kullanıcılar eğitilir, onlar da kendi ekiplerine destek olur.</p>
+  <ul>
+    <li>Kullanıcı kabul testleri ve hata düzeltmeleri</li>
+    <li>Rol bazlı eğitimler ve kısa kullanım kılavuzları</li>
+    <li>Rapor ve belge tasarımlarının son kontrolü</li>
+  </ul>
+</div>
+
+<div class="phase">
+  <h3><small>Aşama 5</small> Canlıya geçiş ve destek</h3>
+  <p>Açılış bakiyeleri ve açık belgeler son haliyle aktarılır, eski sistem kapatılır ve SAP B1'de gerçek işlemlere başlanır. İlk haftalarda yoğun destek verilir; ilk ay sonu kapanışı birlikte yapılır.</p>
+</div>
+
+<div class="promo">
+  <div class="promo__text">
+    <span class="promo__kicker">Hizmet</span>
+    <strong>SAP Business One danışmanlığı</strong>
+    <p>İhtiyaç analizinden canlıya geçişe kadar SAP B1 projenizi birlikte yürütelim.</p>
+  </div>
+  <a class="btn btn--primary btn--sm" href="/hizmetler/sap-business-one-danismanlik/">Hizmeti incele</a>
+</div>
+
+<h2 id="altyapi">Sunucu ve veritabanı: MS SQL mi, SAP HANA mı?</h2>
+<p>SAP Business One iki veritabanı seçeneğiyle çalışır. Seçim; şirketin büyüklüğüne, raporlama ihtiyacına ve bütçeye göre yapılır.</p>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Microsoft SQL Server</th><th>SAP HANA</th></tr></thead>
+    <tbody>
+      <tr><td><strong>İşletim sistemi</strong></td><td>Windows Server</td><td>Linux (SUSE Linux Enterprise Server)</td></tr>
+      <tr><td><strong>Öne çıkan yanı</strong></td><td>Yaygın, BT ekiplerinin aşina olduğu altyapı; başlangıç maliyeti genelde daha düşük</td><td>Bellek içi çalışan hızlı veritabanı; büyük veride raporlama ve analiz performansı</td></tr>
+      <tr><td><strong>Kimler için uygun</strong></td><td>Küçük ve orta ölçekli, standart raporlama ihtiyacı olan şirketler</td><td>Veri hacmi yüksek, anlık analiz ve gelişmiş raporlama isteyen şirketler</td></tr>
+      <tr><td><strong>Donanım</strong></td><td>Daha esnek gereksinim</td><td>Daha yüksek bellek (RAM) gereksinimi</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>Her iki seçenekte de sunucu şirket içinde ya da bir veri merkezinde/bulutta barındırılabilir. Hangisinin size uygun olduğu, kullanıcı sayısı ve beklenen veri büyüklüğüyle birlikte ihtiyaç analizinde netleşir. Serra Bilişim ürünleri iki veritabanında da çalışır.</p>
+
+<h2 id="lisans">SAP Business One lisans türleri</h2>
+<p>SAP Business One kullanıcı bazlı lisanslanır. Her kullanıcı, yapacağı işe göre farklı bir lisans türüne sahip olabilir:</p>
+<ul>
+  <li><strong>Professional:</strong> tüm modüllere erişen tam kullanıcı lisansı</li>
+  <li><strong>Limited:</strong> belirli bir alana (ör. finans, lojistik, CRM) odaklı, daha ekonomik kullanıcı lisansları</li>
+  <li><strong>Diğer lisanslar:</strong> SAP'nin sunduğu paketlere ve kullanım şekline göre ek seçenekler</li>
+</ul>
+<p>Lisanslar SAP iş ortakları üzerinden satın alınır; satın alma veya abonelik şeklinde olabilir. Güncel lisans türleri ve fiyatlar SAP tarafından belirlendiği için kesin teklif iş ortağından alınmalıdır. Doğru lisans karışımı, kimin hangi ekranı kullanacağı netleştiğinde maliyeti ciddi ölçüde düşürür.</p>
+
+<h2 id="sure">SAP Business One kurulumu ne kadar sürer?</h2>
+<p>Süreyi belirleyen şey programın yüklenmesi değil, projenin kapsamıdır. Kabaca:</p>
+<ul>
+  <li><strong>Standart süreçli, tek şirketli projeler:</strong> birkaç hafta</li>
+  <li><strong>Üretim, çok depo veya birden fazla şirket içeren projeler:</strong> birkaç ay</li>
+  <li><strong>Çok sayıda entegrasyon ve özel geliştirme gerektiren projeler:</strong> kapsama göre daha uzun</li>
+</ul>
+<p>Süreyi en çok uzatan iki etken, verinin temiz olmaması ve şirket içinde karar alma süreçlerinin yavaş ilerlemesidir. Kesin takvim ihtiyaç analizinden sonra çıkarılır.</p>
+
+<h2 id="maliyet">Kurulum maliyetini neler belirler?</h2>
+<p>Bir SAP B1 projesinin toplam maliyeti üç kalemden oluşur: <strong>lisans</strong>, <strong>altyapı</strong> (sunucu, veritabanı, barındırma) ve <strong>danışmanlık hizmeti</strong>. Danışmanlık tarafında maliyeti etkileyen başlıca etkenler:</p>
+<ul>
+  <li>Kullanıcı ve şirket sayısı</li>
+  <li>Kullanılacak modüller (özellikle üretim ve çok depolu stok)</li>
+  <li>Aktarılacak verinin miktarı ve temizliği</li>
+  <li>e-Dönüşüm, bordro, banka gibi Türkiye'ye özgü ihtiyaçlar</li>
+  <li>Entegrasyonlar ve özel geliştirmeler</li>
+  <li>Eğitim kapsamı ve canlıya geçiş sonrası destek süresi</li>
+</ul>
+<p>Bazı yaygın ihtiyaçlar için sıfırdan geliştirme yerine hazır ürün kullanmak hem süreyi hem maliyeti düşürür. Örneğin e-Fatura için <a href="/urunler/serra-e-donusum/">Serra e-Dönüşüm</a>, bordro için <a href="/urunler/serra-bordro/">Serra Bordro</a>, banka hareketleri için <a href="/urunler/serra-banka/">Serra Banka</a>.</p>
+
+<h2 id="kontrol-listesi">Canlıya geçiş öncesi kontrol listesi</h2>
+<ul class="checklist">
+  <li>Hesap planı ve muhasebe eşleştirmeleri mali müşavirle birlikte onaylandı</li>
+  <li>Cari ve stok kartları tekrar eden kayıtlardan temizlendi</li>
+  <li>Açılış bakiyeleri eski sistemle karşılaştırıldı ve tuttu</li>
+  <li>e-Fatura, e-Arşiv ve e-İrsaliye gönderimi test ortamında denendi</li>
+  <li>Belge tasarımları (fatura, irsaliye, teklif) son haline getirildi</li>
+  <li>Kullanıcı yetkileri ve onay süreçleri tanımlandı</li>
+  <li>Her departman kendi temel senaryosunu test şirketinde baştan sona çalıştırdı</li>
+  <li>Yedekleme planı kuruldu ve geri yükleme denendi</li>
+  <li>Canlıya geçişin ilk haftası için destek planı netleşti</li>
+</ul>
+
+<h2 id="hatalar">Sık yapılan hatalar</h2>
+<h3>Eski süreçleri olduğu gibi taşımak</h3>
+<p>Eski programdaki her alışkanlığı SAP B1'de birebir yeniden kurmaya çalışmak, gereksiz geliştirmeye ve uzayan projeye yol açar. Önce standart SAP B1 akışının ihtiyacı karşılayıp karşılamadığına bakmak gerekir.</p>
+<h3>Veriyi temizlemeden aktarmak</h3>
+<p>Mükerrer cari kartlar, kullanılmayan stoklar ve hatalı bakiyeler yeni sisteme taşındığında sorun da taşınmış olur. Veri temizliği projenin en çok emek isteyen ama en çok karşılığını veren adımıdır.</p>
+<h3>Eğitimi son haftaya bırakmak</h3>
+<p>Kullanıcılar sistemi ilk kez canlıya geçiş günü görürse hata ve direnç kaçınılmazdır. Anahtar kullanıcıların test aşamasından itibaren sürece katılması gerekir.</p>
+<h3>Veritabanına doğrudan yazan entegrasyonlar</h3>
+<p>SAP, SAP Business One veritabanına doğrudan veri yazılmasını desteklemez. Entegrasyonların DI API veya Service Layer üzerinden yapılması gerekir. Ayrıntılar için <a href="/hizmetler/sap-business-one-entegrasyon/">SAP Business One entegrasyonu</a> sayfamıza bakabilirsiniz.</p>
+
+<div class="promo">
+  <div class="promo__text">
+    <span class="promo__kicker">Ücretsiz ön görüşme</span>
+    <strong>SAP B1 projeniz için 30 dakikalık ön görüşme</strong>
+    <p>Kapsamı, süreyi ve hangi hazır ürünlerin işinize yarayacağını birlikte netleştirelim.</p>
+  </div>
+  <a class="btn btn--primary btn--sm" href="/#iletisim">Görüşme planla</a>
+</div>
+
+          <h2 id="sss">Sık sorulan sorular</h2>
+          <div class="faq" style="margin-top:20px">
+          <details>
+            <summary>SAP Business One kurulumu ne kadar sürer?</summary>
+            <p>Standart süreçli, tek şirketli projeler genellikle birkaç hafta; üretim, çok depo veya birden fazla şirket içeren projeler birkaç ay sürer. Kesin takvim ihtiyaç analizinden sonra çıkarılır.</p>
+          </details>
+          <details>
+            <summary>SAP Business One hangi veritabanlarıyla çalışır?</summary>
+            <p>SAP Business One, Microsoft SQL Server ve SAP HANA veritabanlarıyla çalışır. MS SQL Windows Server üzerinde, SAP HANA ise Linux üzerinde çalışır.</p>
+          </details>
+          <details>
+            <summary>SAP Business One kurulum maliyetini ne belirler?</summary>
+            <p>Toplam maliyet lisans, altyapı ve danışmanlık hizmetinden oluşur. Kullanıcı ve şirket sayısı, kullanılacak modüller, veri göçü, Türkiye'ye özgü ihtiyaçlar (e-Fatura, bordro, banka) ve entegrasyonlar maliyeti belirleyen başlıca etkenlerdir.</p>
+          </details>
+          <details>
+            <summary>SAP Business One'a eski programdaki veriler aktarılabilir mi?</summary>
+            <p>Evet. Cari kartlar, stok kartları, açılış bakiyeleri ve açık belgeler şablonlara hazırlanıp Data Transfer Workbench (DTW) gibi araçlarla aktarılır. Aktarımdan önce verinin temizlenmesi önerilir.</p>
+          </details>
+          <details>
+            <summary>SAP Business One lisansları nereden alınır?</summary>
+            <p>SAP Business One lisansları SAP iş ortakları üzerinden satın alınır. Professional ve Limited gibi farklı kullanıcı lisans türleri vardır; doğru lisans karışımı kimin hangi ekranı kullanacağına göre belirlenir.</p>
+          </details>
+          <details>
+            <summary>SAP Business One'da e-Fatura nasıl kullanılır?</summary>
+            <p>SAP Business One'da e-Fatura, e-Arşiv ve e-İrsaliye için bir entegrasyon çözümü gerekir. Serra e-Dönüşüm ile belgeler SAP B1 içinden oluşturulup özel entegratör üzerinden gönderilir.</p>
+          </details>
+          </div>
+
+          <div class="author-box">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <strong>Vahit Ergin</strong>
+              <p>Serra Bilişim'in kurucusu. 2015'ten bu yana SAP Business One projelerinde danışmanlık, add-on geliştirme ve entegrasyon üzerine çalışıyor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">İlgili</span>
+          <h2>İlgili ürün ve hizmetler</h2>
+        </div>
+        <div class="services">
+          <a class="scard scard--link" href="/hizmetler/sap-business-one-danismanlik/">
+            <span class="pcard__kicker">Hizmet</span>
+            <h3>SAP Business One Danışmanlığı</h3>
+            <p>SAP Business One'ı şirketinizin gerçek iş akışına göre kuruyoruz.</p>
+          </a>
+          <a class="scard scard--link" href="/urunler/serra-e-donusum/" style="--p:#7c3aed">
+            <span class="pcard__kicker">e-Dönüşüm</span>
+            <h3>Serra e-Dönüşüm</h3>
+            <p>SAP Business One için e-Fatura, e-Arşiv, e-İrsaliye ve e-Defter entegrasyonu.</p>
+          </a>
+          <a class="scard scard--link" href="/hizmetler/sap-business-one-entegrasyon/">
+            <span class="pcard__kicker">Hizmet</span>
+            <h3>SAP Business One Entegrasyonu</h3>
+            <p>SAP B1'i e-ticaret, banka, e-Belge ve diğer sistemlerinizle konuşturuyoruz.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <span class="badge badge--light"><span class="badge__dot"></span> Ücretsiz ön görüşme</span>
+          <h2>SAP Business One projenizi birlikte planlayalım</h2>
+          <p>30 dakikalık kısa bir görüşmede ihtiyacınızı dinleyip en kısa yolu birlikte netleştirelim. Yazın ya da arayın.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="/#iletisim">Demo talep et</a>
+            <a class="btn btn--ghost" href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="nav__brand">
+            <span class="nav__mark">S</span>
+            <span class="nav__name">Serra<span>Bilişim</span></span>
+          </a>
+          <p>SAP Business One için ürün geliştiren, entegre eden ve destekleyen yazılım şirketi.</p>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3zM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V19h-3V9h2.9v1.4h.04c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7z"/></svg></a>
+            <a href="https://github.com/VahitErgin" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+            <a href="mailto:iletisim@serrabilisim.com" aria-label="E-posta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Ürünler</h4>
+          <a href="/urunler/panora/">Panora — Raporlama</a>
+          <a href="/urunler/serra-bordro/">Serra Bordro</a>
+          <a href="/urunler/serra-banka/">Serra Banka</a>
+          <a href="/urunler/serra-uretim/">Serra Üretim</a>
+          <a href="/urunler/sawbot/">SAWBot</a>
+          <a href="/urunler/serra-e-donusum/">Serra e-Dönüşüm</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="/hizmetler/sap-business-one-danismanlik/">SAP B1 Danışmanlık</a>
+          <a href="/hizmetler/sap-business-one-add-on-gelistirme/">Add-on Geliştirme</a>
+          <a href="/hizmetler/sap-business-one-entegrasyon/">Sistem Entegrasyonu</a>
+          <a href="/#hizmetler">Raporlama &amp; Bakım</a>
+          <a href="/#sss">Sık Sorulan Sorular</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          <a href="tel:+905303213033">+90 530 321 30 33</a>
+          <address class="footer__addr"><span class="al"><span class="as as1">Atatürk Mah. Ertuğrul Gazi Sk. No:&nbsp;2B,</span> <span class="as as2">Metropol İstanbul</span></span> <span class="al"><span class="as as3">C1&nbsp;Blok, İç Kapı&nbsp;131,</span> <span class="as as4">34758 Ataşehir / İstanbul</span></span></address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Serra Bilişim. Tüm hakları saklıdır.</span>
+        <span class="footer__legal">
+          <a href="/gizlilik.html">KVKK Aydınlatma Metni</a>
+          <a href="/gizlilik.html#cerez">Çerez Politikası</a>
+        </span>
+        <span>SAP ve SAP Business One, SAP SE'nin tescilli markalarıdır.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script>
+    (function () {
+      var d = document.getElementById("tocDetails");
+      if (!d) return;
+      if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open");
+      d.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () {
+        if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open"); }); });
+    })();
+  </script>
+</body>
+</html>
