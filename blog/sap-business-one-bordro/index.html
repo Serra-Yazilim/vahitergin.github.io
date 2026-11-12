@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Business One Bordro: Ayrı Program mı, Entegre Çözüm mü? — Serra Bilişim</title>
+  <meta name="description" content="SAP Business One&#x27;da bordro modülü var mı? Ayrı bordro programı ile SAP B1 entegre bordro çözümünün karşılaştırması, puantajdan yevmiye kaydına süreç ve seçim kontrol listesi." />
+  <meta name="author" content="Vahit Ergin" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="canonical" href="https://serrabilisim.com/blog/sap-business-one-bordro/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Serra Bilişim" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:url" content="https://serrabilisim.com/blog/sap-business-one-bordro/" />
+  <meta property="og:title" content="SAP Business One Bordro: Ayrı Program mı, Entegre Çözüm mü? — Serra Bilişim" />
+  <meta property="og:description" content="SAP Business One&#x27;da bordro modülü var mı? Ayrı bordro programı ile SAP B1 entegre bordro çözümünün karşılaştırması, puantajdan yevmiye kaydına süreç ve seçim kontrol listesi." />
+  <meta property="og:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-bordro.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-bordro.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/icon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-bordro/#post",
+      "headline": "SAP Business One Bordro: Ayrı Program mı, Entegre Çözüm mü?",
+      "description": "SAP Business One'da bordro modülü var mı? Ayrı bordro programı ile SAP B1 entegre bordro çözümünün karşılaştırması, puantajdan yevmiye kaydına süreç ve seçim kontrol listesi.",
+      "image": "https://serrabilisim.com/assets/og/blog-sap-business-one-bordro.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "tr-TR",
+      "wordCount": 599,
+      "articleSection": "Finans & Bordro",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://serrabilisim.com/blog/sap-business-one-bordro/"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://serrabilisim.com/#vahit-ergin",
+        "name": "Vahit Ergin",
+        "jobTitle": "Kurucu, Yazılım Mühendisi",
+        "worksFor": {
+          "@id": "https://serrabilisim.com/#org"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/vahitergin",
+          "https://github.com/VahitErgin",
+          "https://x.com/vahitergin1"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://serrabilisim.com/#org",
+        "name": "Serra Bilişim",
+        "url": "https://serrabilisim.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://serrabilisim.com/assets/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana sayfa",
+          "item": "https://serrabilisim.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://serrabilisim.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAP B1 ile bordro",
+          "item": "https://serrabilisim.com/blog/sap-business-one-bordro/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-bordro/#sss",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SAP Business One'da bordro modülü var mı?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "SAP Business One'ın standart paketi Türkiye mevzuatına uygun bordro hesaplamalarını içermez. Bordro için ayrı bir program ya da SAP B1 ile entegre bir çözüm kullanılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bordro yevmiye kaydı SAP B1'e otomatik aktarılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Serra Bordro gibi entegre çözümlerde bordro kapandığında yevmiye kaydı hazırlanır ve SAP Business One'a aktarılır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ayrı bordro programı mı, entegre çözüm mü daha iyi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Personel sayısı az ve muhasebe kaydı basitse ayrı program yeterli olabilir. Personel, şirket veya maliyet merkezi sayısı arttıkça entegre çözüm elle aktarım yükünü ve hata riskini ortadan kaldırır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bordro programı değiştirmek için en uygun zaman ne zaman?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yeni bir yılın ya da en azından yeni bir ayın başı. İlk ay iki sistemin paralel çalıştırılması geçişi risksiz hale getirir."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand">
+        <img class="nav__logo nav__logo--day" src="/assets/logo-serra.png" alt="Serra Bilişim" width="200" height="40" />
+        <img class="nav__logo nav__logo--night" src="/assets/logo-serra-light.png" alt="" aria-hidden="true" width="200" height="40" />
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="/#urunler">Ürünler</a>
+        <a href="/#hizmetler">Hizmetler</a>
+        <a href="/#neden">Neden Serra</a>
+        <a href="/#hakkimizda">Hakkımızda</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#iletisim">İletişim</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="/#iletisim">Demo talep et</a>
+      </nav>
+
+      <div class="nav__tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">
+          <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <section class="section" style="padding-bottom:clamp(30px,4vw,48px)">
+      <div class="container">
+        <nav class="crumbs" aria-label="Site haritası">
+          <a href="/">Ana sayfa</a>
+          <span aria-hidden="true">/</span>
+          <a href="/blog/">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">SAP B1 ile bordro</span>
+        </nav>
+        <header class="article-head">
+          <span class="section__tag">Finans & Bordro</span>
+          <h1>SAP B1 ile bordro: ayrı program mı, entegre çözüm mü?</h1>
+          <p class="article-head__lead">SAP Business One kullanan şirketlerin en sık sorduğu sorulardan biri bordronun nasıl yönetileceği. Ayrı bir bordro programı ile SAP B1'e entegre bir çözümü karşılaştırdık.</p>
+          <div class="byline">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <div class="byline__name"><a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener author">Vahit Ergin</a></div>
+              <div class="byline__meta">
+                <time datetime="2026-11-12">12 Kasım 2026</time> · 3 dk okuma
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container article-layout">
+        <aside class="toc" aria-label="İçindekiler">
+          <div class="toc__title">İçindekiler</div>
+          <details open id="tocDetails">
+            <summary>İçindekiler</summary>
+            <ol>
+              <li><a href="#neden-ayri">SAP Business One'da bordro neden ayrı bir konu?</a></li>
+              <li><a href="#karsilastirma">Ayrı program mı, entegre çözüm mü?</a></li>
+              <li><a href="#akis">Entegre bordro süreci adım adım</a></li>
+              <li><a href="#sorular">Bordro çözümü seçerken sorulması gereken sorular</a></li>
+              <li><a href="#gecis">Mevcut bordro programından geçiş</a></li>
+              <li><a href="#sss">Sık sorulan sorular</a></li>
+            </ol>
+          </details>
+        </aside>
+        <article class="article">
+<div class="summary-box">
+  <h2>Bu yazıda</h2>
+  <ul>
+    <li>SAP Business One'da bordro neden ayrı bir konu?</li>
+    <li>Ayrı bordro programı ile entegre çözümün karşılaştırması</li>
+    <li>Bordro sürecinin SAP B1 ile uçtan uca akışı</li>
+    <li>Bordro çözümü seçerken sorulması gereken sorular</li>
+  </ul>
+</div>
+
+<h2 id="neden-ayri">SAP Business One'da bordro neden ayrı bir konu?</h2>
+<p>SAP Business One, uluslararası bir ERP olarak muhasebe, satış, stok ve üretimi güçlü biçimde yönetir. Ancak bordro, her ülkenin kendi mevzuatına sıkı sıkıya bağlı bir alandır. Türkiye'de bordro; gelir vergisi dilimleri, damga vergisi, SGK primleri, asgari ücret istisnası, kıdem ve ihbar tazminatı, BES kesintileri ve sık değişen yasal parametrelerle hesaplanır.</p>
+<p>SAP Business One'ın standart paketi bu hesaplamaları içermez. Bu yüzden SAP B1 kullanan şirketler bordro için ya ayrı bir program kullanır ya da SAP B1 ile entegre bir bordro çözümüne yönelir.</p>
+
+<h2 id="karsilastirma">Ayrı program mı, entegre çözüm mü?</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th></th><th>Ayrı bordro programı</th><th>SAP B1 ile entegre çözüm</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Muhasebe kaydı</strong></td><td>Bordro sonucu Excel'e alınır, yevmiye SAP'a elle girilir</td><td>Yevmiye kaydı hazırlanır ve SAP B1'e aktarılır</td></tr>
+      <tr><td><strong>Personel bilgisi</strong></td><td>İki sistemde ayrı ayrı tutulur</td><td>Tek yerde yönetilir</td></tr>
+      <tr><td><strong>Maliyet merkezi</strong></td><td>Dağıtım elle yapılır</td><td>Bordro maliyeti doğru hesaplara ve merkezlere yansır</td></tr>
+      <tr><td><strong>Hata riski</strong></td><td>Her ay tekrarlanan elle aktarım hataya açıktır</td><td>Aktarım otomatik olduğu için düşük</td></tr>
+      <tr><td><strong>Raporlama</strong></td><td>Bordro ve finans verisi ayrı raporlanır</td><td>Personel maliyeti finans raporlarıyla birlikte görülür</td></tr>
+    </tbody>
+  </table>
+</div>
+<p>Ayrı bir bordro programı, özellikle personel sayısı az ve muhasebe kaydı basit olan şirketlerde yeterli olabilir. Personel sayısı arttıkça, birden fazla şirket ya da maliyet merkezi olduğunda, her ay yapılan elle aktarım ciddi bir iş yükü ve hata kaynağına dönüşür.</p>
+
+<h2 id="akis">Entegre bordro süreci adım adım</h2>
+<div class="phase">
+  <h3><small>1</small> Puantaj ve girişler</h3>
+  <p>Çalışma günleri, fazla mesai, izinler, raporlar ve avanslar tek ekranda toplanır.</p>
+</div>
+<div class="phase">
+  <h3><small>2</small> Hesaplama</h3>
+  <p>Brüt-net hesap, vergi ve SGK kesintileri yasal parametrelerle otomatik yapılır. Kıdem ve ihbar tazminatı, BES, sendika farkı ve sosyal haklar hesaba dahil edilir.</p>
+</div>
+<div class="phase">
+  <h3><small>3</small> Kontrol ve onay</h3>
+  <p>Bordro, tanımlı onay akışından geçer. Kim neyi görecek ve onaylayacak, yetkilendirme ile belirlenir.</p>
+</div>
+<div class="phase">
+  <h3><small>4</small> Muhasebe kaydı</h3>
+  <p>Bordro kapandığında yevmiye kaydı hazırlanır ve SAP Business One'a aktarılır. Muhasebe ekibi ayrı bir dosyayla uğraşmaz.</p>
+</div>
+<div class="phase">
+  <h3><small>5</small> Personele iletim</h3>
+  <p>Personel bordrosunu self-servis portalından görür ya da e-postayla alır.</p>
+</div>
+
+<div class="promo">
+  <div class="promo__text">
+    <span class="promo__kicker">Bordro & İK</span>
+    <strong>Serra Bordro</strong>
+    <p>Puantajdan yevmiye kaydına kadar bordroyu SAP Business One ile entegre yönetin.</p>
+  </div>
+  <a class="btn btn--primary btn--sm" href="/urunler/serra-bordro/">Ürünü incele</a>
+</div>
+
+<h2 id="sorular">Bordro çözümü seçerken sorulması gereken sorular</h2>
+<ul class="checklist">
+  <li>Yasal parametreler (vergi dilimleri, asgari ücret, SGK tavanı) değiştiğinde güncelleme nasıl yapılıyor?</li>
+  <li>Yevmiye kaydı SAP B1'e otomatik aktarılıyor mu, hesap eşleştirmeleri esnek mi?</li>
+  <li>Maliyet merkezi ve proje bazında dağıtım yapılabiliyor mu?</li>
+  <li>Kıdem, ihbar, BES ve sendika gibi özel hesaplamalar destekleniyor mu?</li>
+  <li>Personel kendi bordrosunu görebiliyor mu?</li>
+  <li>Onay akışı ve kullanıcı bazlı yetkilendirme var mı?</li>
+  <li>KVKK açısından kişisel veriler nasıl korunuyor?</li>
+</ul>
+
+<h2 id="gecis">Mevcut bordro programından geçiş</h2>
+<p>Geçiş için en uygun zaman, yeni bir yılın ya da en azından yeni bir ayın başıdır. Personel kartları, kümülatif vergi matrahları, kıdem başlangıç tarihleri ve izin bakiyeleri eski sistemden aktarılır. İlk ay yeni sistem ile eski sistem paralel çalıştırılarak sonuçlar karşılaştırılırsa geçiş risksiz olur.</p>
+<p>Bordro, SAP Business One projesinin Türkiye'ye özgü parçalarından biridir. Diğer yerel ihtiyaçlar için <a href="/blog/sap-business-one-e-fatura-entegrasyonu/">e-Fatura entegrasyonu</a> yazımıza ve <a href="/urunler/serra-banka/">Serra Banka</a> sayfamıza da bakabilirsiniz.</p>
+
+          <h2 id="sss">Sık sorulan sorular</h2>
+          <div class="faq" style="margin-top:20px">
+          <details>
+            <summary>SAP Business One'da bordro modülü var mı?</summary>
+            <p>SAP Business One'ın standart paketi Türkiye mevzuatına uygun bordro hesaplamalarını içermez. Bordro için ayrı bir program ya da SAP B1 ile entegre bir çözüm kullanılır.</p>
+          </details>
+          <details>
+            <summary>Bordro yevmiye kaydı SAP B1'e otomatik aktarılabilir mi?</summary>
+            <p>Evet. Serra Bordro gibi entegre çözümlerde bordro kapandığında yevmiye kaydı hazırlanır ve SAP Business One'a aktarılır.</p>
+          </details>
+          <details>
+            <summary>Ayrı bordro programı mı, entegre çözüm mü daha iyi?</summary>
+            <p>Personel sayısı az ve muhasebe kaydı basitse ayrı program yeterli olabilir. Personel, şirket veya maliyet merkezi sayısı arttıkça entegre çözüm elle aktarım yükünü ve hata riskini ortadan kaldırır.</p>
+          </details>
+          <details>
+            <summary>Bordro programı değiştirmek için en uygun zaman ne zaman?</summary>
+            <p>Yeni bir yılın ya da en azından yeni bir ayın başı. İlk ay iki sistemin paralel çalıştırılması geçişi risksiz hale getirir.</p>
+          </details>
+          </div>
+
+          <div class="author-box">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <strong>Vahit Ergin</strong>
+              <p>Serra Bilişim'in kurucusu. 2015'ten bu yana SAP Business One projelerinde danışmanlık, add-on geliştirme ve entegrasyon üzerine çalışıyor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">İlgili</span>
+          <h2>İlgili ürün ve hizmetler</h2>
+        </div>
+        <div class="services">
+          <a class="scard scard--link" href="/urunler/serra-bordro/" style="--p:#0f766e">
+            <span class="pcard__kicker">Bordro & İK</span>
+            <h3>Serra Bordro</h3>
+            <p>SAP Business One ile entegre bordro ve İK portalı.</p>
+          </a>
+          <a class="scard scard--link" href="/urunler/serra-banka/" style="--p:#2563eb">
+            <span class="pcard__kicker">Banka</span>
+            <h3>Serra Banka</h3>
+            <p>Banka ekstrelerini SAP B1'e otomatik aktarır, ödeme talimatlarını bankaya gönderir.</p>
+          </a>
+          <a class="scard scard--link" href="/hizmetler/sap-business-one-danismanlik/">
+            <span class="pcard__kicker">Hizmet</span>
+            <h3>SAP Business One Danışmanlığı</h3>
+            <p>SAP Business One'ı şirketinizin gerçek iş akışına göre kuruyoruz.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <span class="badge badge--light"><span class="badge__dot"></span> Ücretsiz ön görüşme</span>
+          <h2>SAP Business One projenizi birlikte planlayalım</h2>
+          <p>30 dakikalık kısa bir görüşmede ihtiyacınızı dinleyip en kısa yolu birlikte netleştirelim. Yazın ya da arayın.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="/#iletisim">Demo talep et</a>
+            <a class="btn btn--ghost" href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="nav__brand">
+            <span class="nav__mark">S</span>
+            <span class="nav__name">Serra<span>Bilişim</span></span>
+          </a>
+          <p>SAP Business One için ürün geliştiren, entegre eden ve destekleyen yazılım şirketi.</p>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3zM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V19h-3V9h2.9v1.4h.04c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7z"/></svg></a>
+            <a href="https://github.com/VahitErgin" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+            <a href="mailto:iletisim@serrabilisim.com" aria-label="E-posta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Ürünler</h4>
+          <a href="/urunler/panora/">Panora — Raporlama</a>
+          <a href="/urunler/serra-bordro/">Serra Bordro</a>
+          <a href="/urunler/serra-banka/">Serra Banka</a>
+          <a href="/urunler/serra-uretim/">Serra Üretim</a>
+          <a href="/urunler/sawbot/">SAWBot</a>
+          <a href="/urunler/serra-e-donusum/">Serra e-Dönüşüm</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="/hizmetler/sap-business-one-danismanlik/">SAP B1 Danışmanlık</a>
+          <a href="/hizmetler/sap-business-one-add-on-gelistirme/">Add-on Geliştirme</a>
+          <a href="/hizmetler/sap-business-one-entegrasyon/">Sistem Entegrasyonu</a>
+          <a href="/#hizmetler">Raporlama &amp; Bakım</a>
+          <a href="/#sss">Sık Sorulan Sorular</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          <a href="tel:+905303213033">+90 530 321 30 33</a>
+          <address class="footer__addr"><span class="al"><span class="as as1">Atatürk Mah. Ertuğrul Gazi Sk. No:&nbsp;2B,</span> <span class="as as2">Metropol İstanbul</span></span> <span class="al"><span class="as as3">C1&nbsp;Blok, İç Kapı&nbsp;131,</span> <span class="as as4">34758 Ataşehir / İstanbul</span></span></address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Serra Bilişim. Tüm hakları saklıdır.</span>
+        <span class="footer__legal">
+          <a href="/gizlilik.html">KVKK Aydınlatma Metni</a>
+          <a href="/gizlilik.html#cerez">Çerez Politikası</a>
+        </span>
+        <span>SAP ve SAP Business One, SAP SE'nin tescilli markalarıdır.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script>
+    (function () {
+      var d = document.getElementById("tocDetails");
+      if (!d) return;
+      if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open");
+      d.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () {
+        if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open"); }); });
+    })();
+  </script>
+</body>
+</html>

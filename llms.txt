@@ -21,7 +21,13 @@
 
 ## Blog
 
-- [SAP Business One kurulumu: adım adım süreç, süre ve maliyet](https://serrabilisim.com/blog/sap-business-one-kurulumu/): SAP B1 projesinin 5 aşaması, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi.
+- [SAP Business One kurulumu: adım adım süreç, süre ve maliyet](https://serrabilisim.com/blog/sap-business-one-kurulumu/): SAP Business One kurulumu nasıl yapılır? 5 aşamada SAP B1 projesi, MS SQL ve SAP HANA seçimi, lisans türleri, kurulum süresi, maliyet etkenleri ve canlıya geçiş kontrol listesi.
+- [SAP Business One nedir? Modüller, fiyat ve kimler için uygun](https://serrabilisim.com/blog/sap-business-one-nedir/): SAP Business One (SAP B1) nedir, hangi modüllerden oluşur, fiyatı neye göre belirlenir ve hangi şirketler için uygundur? Türkiye'de SAP B1 kullanırken gereken ek çözümler.
+- [SAP B1'de HANA mı, MS SQL mi? Karar rehberi](https://serrabilisim.com/blog/sap-b1-hana-mi-ms-sql-mi/): SAP Business One için SAP HANA mı Microsoft SQL Server mı seçilmeli? Performans, raporlama, altyapı, maliyet karşılaştırması ve MS SQL'den HANA'ya geçiş.
+- [SAP Business One ve yapay zekâ: neler yapılabilir?](https://serrabilisim.com/blog/sap-business-one-yapay-zeka/): SAP Business One'da yapay zekâ ile doğal dille veri sorgulama, onay süreçleri, rapor özetleme, belge okuma ve müşteri bildirimleri. KVKK ve veri güvenliği için kontrol listesi.
+- [SAP B1 verisine WhatsApp'tan ulaşmak: SAWBot nasıl çalışır?](https://serrabilisim.com/blog/sap-b1-whatsapp-sawbot/): SAP Business One verisine WhatsApp'tan ulaşın: cari ekstre, stok, satış ve tahsilat sorgulama, satın alma onayı ve müşteri bildirimleri. SAWBot'un çalışma mantığı ve kurulumu.
+- [SAP Business One'da e-Fatura entegrasyonu nasıl yapılır?](https://serrabilisim.com/blog/sap-business-one-e-fatura-entegrasyonu/): SAP Business One'da e-Fatura, e-Arşiv, e-İrsaliye ve e-İhracat faturası nasıl kesilir? UBL-TR akışı, özel entegratör seçimi, XSLT fatura tasarımı ve geçiş kontrol listesi.
+- [SAP B1 ile bordro: ayrı program mı, entegre çözüm mü?](https://serrabilisim.com/blog/sap-business-one-bordro/): SAP Business One'da bordro modülü var mı? Ayrı bordro programı ile SAP B1 entegre bordro çözümünün karşılaştırması, puantajdan yevmiye kaydına süreç ve seçim kontrol listesi.
 - [Blog](https://serrabilisim.com/blog/): SAP Business One rehberleri ve yazılar.
 
 ## Diğer
