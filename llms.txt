@@ -28,6 +28,9 @@
 - [SAP B1 verisine WhatsApp'tan ulaşmak: SAWBot nasıl çalışır?](https://serrabilisim.com/blog/sap-b1-whatsapp-sawbot/): SAP Business One verisine WhatsApp'tan ulaşın: cari ekstre, stok, satış ve tahsilat sorgulama, satın alma onayı ve müşteri bildirimleri. SAWBot'un çalışma mantığı ve kurulumu.
 - [SAP Business One'da e-Fatura entegrasyonu nasıl yapılır?](https://serrabilisim.com/blog/sap-business-one-e-fatura-entegrasyonu/): SAP Business One'da e-Fatura, e-Arşiv, e-İrsaliye ve e-İhracat faturası nasıl kesilir? UBL-TR akışı, özel entegratör seçimi, XSLT fatura tasarımı ve geçiş kontrol listesi.
 - [SAP B1 ile bordro: ayrı program mı, entegre çözüm mü?](https://serrabilisim.com/blog/sap-business-one-bordro/): SAP Business One'da bordro modülü var mı? Ayrı bordro programı ile SAP B1 entegre bordro çözümünün karşılaştırması, puantajdan yevmiye kaydına süreç ve seçim kontrol listesi.
+- [SAP B1'de raporlama: Query, Crystal Reports mu, hazır panel mi?](https://serrabilisim.com/blog/sap-business-one-raporlama/): SAP Business One'da raporlama araçları: hazır raporlar, Query Manager, Crystal Reports ve Excel. Hangi ihtiyaç için hangi araç, raporlar nasıl zamanlanır ve otomatik gönderilir?
+- [SAP B1 banka entegrasyonu: ekstreden mutabakata](https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/): SAP Business One banka entegrasyonu ile ekstreleri otomatik çekme, kural tabanlı eşleştirme, otomatik muhasebe kaydı, ödeme ve maaş talimatı. DBS ve POS tahsilatları.
+- [SAP B1'de üretim takibi: sahadan yönetime canlı veri](https://serrabilisim.com/blog/sap-business-one-uretim-takibi/): SAP Business One üretim modülü neleri karşılar, nerede yetersiz kalır? Barkodlu terminal, Gantt planlama, kalite kontrol, bakım ve duruş analizi ile canlı üretim takibi.
 - [Blog](https://serrabilisim.com/blog/): SAP Business One rehberleri ve yazılar.
 
 ## Diğer

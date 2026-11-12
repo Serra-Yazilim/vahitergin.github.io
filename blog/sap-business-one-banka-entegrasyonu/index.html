@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAP Business One Banka Entegrasyonu: Ekstre, Eşleştirme ve Ödeme Talimatı — Serra Bilişim</title>
+  <meta name="description" content="SAP Business One banka entegrasyonu ile ekstreleri otomatik çekme, kural tabanlı eşleştirme, otomatik muhasebe kaydı, ödeme ve maaş talimatı. DBS ve POS tahsilatları." />
+  <meta name="author" content="Vahit Ergin" />
+  <meta name="theme-color" content="#0f766e" />
+  <link rel="canonical" href="https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="Serra Bilişim" />
+  <meta property="og:locale" content="tr_TR" />
+  <meta property="og:url" content="https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/" />
+  <meta property="og:title" content="SAP Business One Banka Entegrasyonu: Ekstre, Eşleştirme ve Ödeme Talimatı — Serra Bilişim" />
+  <meta property="og:description" content="SAP Business One banka entegrasyonu ile ekstreleri otomatik çekme, kural tabanlı eşleştirme, otomatik muhasebe kaydı, ödeme ve maaş talimatı. DBS ve POS tahsilatları." />
+  <meta property="og:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-banka-entegrasyonu.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:image" content="https://serrabilisim.com/assets/og/blog-sap-business-one-banka-entegrasyonu.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/favicon/icon-512.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png" />
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BlogPosting",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/#post",
+      "headline": "SAP Business One Banka Entegrasyonu: Ekstre, Eşleştirme ve Ödeme Talimatı",
+      "description": "SAP Business One banka entegrasyonu ile ekstreleri otomatik çekme, kural tabanlı eşleştirme, otomatik muhasebe kaydı, ödeme ve maaş talimatı. DBS ve POS tahsilatları.",
+      "image": "https://serrabilisim.com/assets/og/blog-sap-business-one-banka-entegrasyonu.png",
+      "datePublished": "2026-11-12",
+      "dateModified": "2026-11-12",
+      "inLanguage": "tr-TR",
+      "wordCount": 462,
+      "articleSection": "Finans & Bordro",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/"
+      },
+      "author": {
+        "@type": "Person",
+        "@id": "https://serrabilisim.com/#vahit-ergin",
+        "name": "Vahit Ergin",
+        "jobTitle": "Kurucu, Yazılım Mühendisi",
+        "worksFor": {
+          "@id": "https://serrabilisim.com/#org"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/vahitergin",
+          "https://github.com/VahitErgin",
+          "https://x.com/vahitergin1"
+        ]
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://serrabilisim.com/#org",
+        "name": "Serra Bilişim",
+        "url": "https://serrabilisim.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://serrabilisim.com/assets/logo.png"
+        }
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Ana sayfa",
+          "item": "https://serrabilisim.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Blog",
+          "item": "https://serrabilisim.com/blog/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "SAP B1 banka entegrasyonu",
+          "item": "https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/"
+        }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://serrabilisim.com/blog/sap-business-one-banka-entegrasyonu/#sss",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "SAP Business One'a banka ekstresi otomatik aktarılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Serra Banka gibi entegrasyon çözümleriyle ekstreler otomatik çekilir, kural tabanlı eşleştirilir ve muhasebe kaydı kendiliğinden üretilir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Banka hareketleri cari hesaplarla nasıl eşleşir?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IBAN, vergi numarası, açıklamadaki anahtar kelimeler, tutar ve fatura numarası gibi kurallarla. Tanınmayan hareketler kullanıcıya bırakılır ve yeni kurallar eklendikçe elle müdahale azalır."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "SAP B1'den bankaya ödeme talimatı gönderilebilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Toplu ödeme ve maaş talimatları SAP Business One'dan çıkar ve bankaya gönderilir; internet şubesine tekrar girmek gerekmez."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Birden fazla banka ve şirketle çalışılabilir mi?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Evet. Serra Banka çoklu banka, çoklu firma ve çoklu döviz desteğine sahiptir."
+          }
+        }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#icerik">İçeriğe geç</a>
+
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="/" class="nav__brand">
+        <img class="nav__logo nav__logo--day" src="/assets/logo-serra.png" alt="Serra Bilişim" width="200" height="40" />
+        <img class="nav__logo nav__logo--night" src="/assets/logo-serra-light.png" alt="" aria-hidden="true" width="200" height="40" />
+      </a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="/#urunler">Ürünler</a>
+        <a href="/#hizmetler">Hizmetler</a>
+        <a href="/#neden">Neden Serra</a>
+        <a href="/#hakkimizda">Hakkımızda</a>
+        <a href="/blog/">Blog</a>
+        <a href="/#iletisim">İletişim</a>
+        <a class="btn btn--primary btn--sm nav__cta" href="/#iletisim">Demo talep et</a>
+      </nav>
+
+      <div class="nav__tools">
+        <button class="theme-toggle" id="themeToggle" aria-label="Temayı değiştir">
+          <svg class="theme-toggle__sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="theme-toggle__moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="burger" id="burger" aria-label="Menü" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="icerik">
+    <section class="section" style="padding-bottom:clamp(30px,4vw,48px)">
+      <div class="container">
+        <nav class="crumbs" aria-label="Site haritası">
+          <a href="/">Ana sayfa</a>
+          <span aria-hidden="true">/</span>
+          <a href="/blog/">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">SAP B1 banka entegrasyonu</span>
+        </nav>
+        <header class="article-head">
+          <span class="section__tag">Finans & Bordro</span>
+          <h1>SAP B1 banka entegrasyonu: ekstreden mutabakata</h1>
+          <p class="article-head__lead">Banka ekstrelerini internet şubesinden indirip satır satır işlemek, ödeme talimatlarını iki kez girmek zorunda değilsiniz. SAP Business One'da banka sürecinin nasıl otomatikleştiğini anlattık.</p>
+          <div class="byline">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <div class="byline__name"><a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener author">Vahit Ergin</a></div>
+              <div class="byline__meta">
+                <time datetime="2026-11-12">12 Kasım 2026</time> · 2 dk okuma
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="container article-layout">
+        <aside class="toc" aria-label="İçindekiler">
+          <div class="toc__title">İçindekiler</div>
+          <details open id="tocDetails">
+            <summary>İçindekiler</summary>
+            <ol>
+              <li><a href="#standart">SAP Business One'da banka işlemleri: standart akış</a></li>
+              <li><a href="#neler-otomatiklesir">Banka entegrasyonu ile neler otomatikleşir?</a></li>
+              <li><a href="#eslestirme">Ekstre eşleştirme kuralları nasıl kurulur?</a></li>
+              <li><a href="#tahsilat">DBS, POS ve tahsilat servisleri</a></li>
+              <li><a href="#kontrol-listesi">Geçiş öncesi kontrol listesi</a></li>
+              <li><a href="#sss">Sık sorulan sorular</a></li>
+            </ol>
+          </details>
+        </aside>
+        <article class="article">
+<div class="summary-box">
+  <h2>Bu yazıda</h2>
+  <ul>
+    <li>SAP Business One'da banka işlemlerinin standart akışı ve sınırları</li>
+    <li>Banka entegrasyonu ile neler otomatikleşir?</li>
+    <li>Ekstre eşleştirme kuralları nasıl kurulur?</li>
+    <li>Geçiş öncesi kontrol listesi</li>
+  </ul>
+</div>
+
+<h2 id="standart">SAP Business One'da banka işlemleri: standart akış</h2>
+<p>SAP Business One'ın bankacılık modülü tahsilat, ödeme, çek-senet ve banka mutabakatını yönetir. Ödeme sihirbazı ile toplu ödeme hazırlanabilir, banka ekstresi işleme ve harici mutabakat ekranlarıyla banka hareketleri hesaplarla karşılaştırılabilir.</p>
+<p>Sorun, verinin SAP'a nasıl geldiğidir. Türkiye'deki bankaların ekstre ve ödeme formatları farklıdır ve çoğu şirkette ekstreler internet şubesinden indirilip satır satır işlenir. Ödeme talimatları da SAP'ta hazırlandıktan sonra internet şubesine ayrıca girilir. Böylece aynı iş iki kez yapılmış olur.</p>
+
+<h2 id="neler-otomatiklesir">Banka entegrasyonu ile neler otomatikleşir?</h2>
+<div class="table-wrap">
+  <table>
+    <thead><tr><th>İş</th><th>Entegrasyon olmadan</th><th>Entegrasyon ile</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Ekstre</strong></td><td>İnternet şubesinden indirilir, elle işlenir</td><td>Otomatik çekilir</td></tr>
+      <tr><td><strong>Eşleştirme</strong></td><td>Her hareket için cari ve hesap elle bulunur</td><td>Kural tabanlı otomatik eşleşir; yalnızca istisnalara bakılır</td></tr>
+      <tr><td><strong>Muhasebe kaydı</strong></td><td>Elle girilir</td><td>Kendiliğinden üretilir</td></tr>
+      <tr><td><strong>Ödeme talimatı</strong></td><td>İnternet şubesine tekrar girilir</td><td>SAP B1'den bankaya gönderilir</td></tr>
+      <tr><td><strong>Maaş ödemesi</strong></td><td>Liste hazırlanıp bankaya yüklenir</td><td>Toplu talimat SAP'tan çıkar</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h2 id="eslestirme">Ekstre eşleştirme kuralları nasıl kurulur?</h2>
+<p>Otomatik eşleştirmenin başarısı, kuralların ne kadar iyi tanımlandığına bağlıdır. Tipik kurallar şunlardır:</p>
+<ul>
+  <li><strong>IBAN veya vergi numarasına göre:</strong> gönderenin bilgisi cari kartla eşleşir.</li>
+  <li><strong>Açıklamadaki anahtar kelimeye göre:</strong> "KOMİSYON", "EFT ÜCRETİ", "POS" gibi ifadeler ilgili gider hesabına gider.</li>
+  <li><strong>Tutar ve fatura numarasına göre:</strong> açık faturayla birebir eşleşen tahsilatlar kapatılır.</li>
+  <li><strong>Sabit hareketlere göre:</strong> kira, kredi taksidi gibi düzenli ödemeler tanımlı hesaplara işlenir.</li>
+</ul>
+<p>İlk haftalarda tanınmayan hareketler gözden geçirilip yeni kurallar eklendikçe, elle müdahale gereken hareket sayısı hızla azalır.</p>
+
+<div class="promo">
+  <div class="promo__text">
+    <span class="promo__kicker">Banka</span>
+    <strong>Serra Banka</strong>
+    <p>Ekstreleri otomatik çekin, kural tabanlı eşleştirin, ödeme ve maaş talimatlarını SAP B1'den bankaya gönderin.</p>
+  </div>
+  <a class="btn btn--primary btn--sm" href="/urunler/serra-banka/">Ürünü incele</a>
+</div>
+
+<h2 id="tahsilat">DBS, POS ve tahsilat servisleri</h2>
+<p>Banka entegrasyonu yalnızca ekstreden ibaret değildir. Bayi ağıyla çalışan şirketler için DBS (doğrudan borçlandırma sistemi), perakende ve e-ticaret için POS ve sanal POS tahsilatları da aynı yapı içinde yönetilebilir. <a href="/urunler/serra-banka/">Serra Banka</a> DBS, doğrudan borçlandırma ve tahsilat servisleri ile POS, sanal POS ve bulut tahsilat entegrasyonlarını destekler; çoklu banka, çoklu firma ve çoklu döviz ile çalışır.</p>
+
+<h2 id="kontrol-listesi">Geçiş öncesi kontrol listesi</h2>
+<ul class="checklist">
+  <li>Çalışılan bankalar ve hesaplar listelendi</li>
+  <li>Her bankanın entegrasyon yöntemi ve gerekli izinler belirlendi</li>
+  <li>Cari kartlardaki IBAN ve vergi numaraları güncellendi</li>
+  <li>Sık görülen banka hareketleri için ilk eşleştirme kuralları yazıldı</li>
+  <li>Ödeme talimatlarında onay akışı tanımlandı</li>
+  <li>İlk ay elle mutabakatla sonuçlar karşılaştırıldı</li>
+</ul>
+<p>Bordro ödemelerinin de bankaya otomatik gönderilmesi için <a href="/blog/sap-business-one-bordro/">SAP B1 ile bordro</a> yazımıza bakabilirsiniz.</p>
+
+          <h2 id="sss">Sık sorulan sorular</h2>
+          <div class="faq" style="margin-top:20px">
+          <details>
+            <summary>SAP Business One'a banka ekstresi otomatik aktarılabilir mi?</summary>
+            <p>Evet. Serra Banka gibi entegrasyon çözümleriyle ekstreler otomatik çekilir, kural tabanlı eşleştirilir ve muhasebe kaydı kendiliğinden üretilir.</p>
+          </details>
+          <details>
+            <summary>Banka hareketleri cari hesaplarla nasıl eşleşir?</summary>
+            <p>IBAN, vergi numarası, açıklamadaki anahtar kelimeler, tutar ve fatura numarası gibi kurallarla. Tanınmayan hareketler kullanıcıya bırakılır ve yeni kurallar eklendikçe elle müdahale azalır.</p>
+          </details>
+          <details>
+            <summary>SAP B1'den bankaya ödeme talimatı gönderilebilir mi?</summary>
+            <p>Evet. Toplu ödeme ve maaş talimatları SAP Business One'dan çıkar ve bankaya gönderilir; internet şubesine tekrar girmek gerekmez.</p>
+          </details>
+          <details>
+            <summary>Birden fazla banka ve şirketle çalışılabilir mi?</summary>
+            <p>Evet. Serra Banka çoklu banka, çoklu firma ve çoklu döviz desteğine sahiptir.</p>
+          </details>
+          </div>
+
+          <div class="author-box">
+            <span class="byline__avatar" aria-hidden="true">VE</span>
+            <div>
+              <strong>Vahit Ergin</strong>
+              <p>Serra Bilişim'in kurucusu. 2015'ten bu yana SAP Business One projelerinde danışmanlık, add-on geliştirme ve entegrasyon üzerine çalışıyor.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <span class="section__tag">İlgili</span>
+          <h2>İlgili ürün ve hizmetler</h2>
+        </div>
+        <div class="services">
+          <a class="scard scard--link" href="/urunler/serra-banka/" style="--p:#2563eb">
+            <span class="pcard__kicker">Banka</span>
+            <h3>Serra Banka</h3>
+            <p>Banka ekstrelerini SAP B1'e otomatik aktarır, ödeme talimatlarını bankaya gönderir.</p>
+          </a>
+          <a class="scard scard--link" href="/urunler/serra-bordro/" style="--p:#0f766e">
+            <span class="pcard__kicker">Bordro & İK</span>
+            <h3>Serra Bordro</h3>
+            <p>SAP Business One ile entegre bordro ve İK portalı.</p>
+          </a>
+          <a class="scard scard--link" href="/hizmetler/sap-business-one-entegrasyon/">
+            <span class="pcard__kicker">Hizmet</span>
+            <h3>SAP Business One Entegrasyonu</h3>
+            <p>SAP B1'i e-ticaret, banka, e-Belge ve diğer sistemlerinizle konuşturuyoruz.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta">
+          <div class="cta__glow" aria-hidden="true"></div>
+          <span class="badge badge--light"><span class="badge__dot"></span> Ücretsiz ön görüşme</span>
+          <h2>SAP Business One projenizi birlikte planlayalım</h2>
+          <p>30 dakikalık kısa bir görüşmede ihtiyacınızı dinleyip en kısa yolu birlikte netleştirelim. Yazın ya da arayın.</p>
+          <div class="cta__actions">
+            <a class="btn btn--primary" href="/#iletisim">Demo talep et</a>
+            <a class="btn btn--ghost" href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="/" class="nav__brand">
+            <span class="nav__mark">S</span>
+            <span class="nav__name">Serra<span>Bilişim</span></span>
+          </a>
+          <p>SAP Business One için ürün geliştiren, entegre eden ve destekleyen yazılım şirketi.</p>
+          <div class="footer__socials">
+            <a href="https://www.linkedin.com/in/vahitergin" target="_blank" rel="noopener" aria-label="LinkedIn"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 0 0 2 3.5v17A1.5 1.5 0 0 0 3.5 22h17a1.5 1.5 0 0 0 1.5-1.5v-17A1.5 1.5 0 0 0 20.5 2zM8 19H5V9h3zM6.5 7.7a1.7 1.7 0 1 1 0-3.4 1.7 1.7 0 0 1 0 3.4zM19 19h-3v-5.3c0-1.3 0-2.9-1.8-2.9s-2 1.4-2 2.8V19h-3V9h2.9v1.4h.04c.4-.8 1.4-1.6 2.9-1.6 3.1 0 3.7 2 3.7 4.7z"/></svg></a>
+            <a href="https://github.com/VahitErgin" target="_blank" rel="noopener" aria-label="GitHub"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.5v-1.7c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0C17 4.6 18 4.9 18 4.9c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12C23.5 5.7 18.3.5 12 .5z"/></svg></a>
+            <a href="mailto:iletisim@serrabilisim.com" aria-label="E-posta"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Ürünler</h4>
+          <a href="/urunler/panora/">Panora — Raporlama</a>
+          <a href="/urunler/serra-bordro/">Serra Bordro</a>
+          <a href="/urunler/serra-banka/">Serra Banka</a>
+          <a href="/urunler/serra-uretim/">Serra Üretim</a>
+          <a href="/urunler/sawbot/">SAWBot</a>
+          <a href="/urunler/serra-e-donusum/">Serra e-Dönüşüm</a>
+        </div>
+        <div class="footer__col">
+          <h4>Hizmetler</h4>
+          <a href="/hizmetler/sap-business-one-danismanlik/">SAP B1 Danışmanlık</a>
+          <a href="/hizmetler/sap-business-one-add-on-gelistirme/">Add-on Geliştirme</a>
+          <a href="/hizmetler/sap-business-one-entegrasyon/">Sistem Entegrasyonu</a>
+          <a href="/#hizmetler">Raporlama &amp; Bakım</a>
+          <a href="/#sss">Sık Sorulan Sorular</a>
+          <a href="/blog/">Blog</a>
+        </div>
+        <div class="footer__col">
+          <h4>İletişim</h4>
+          <a href="mailto:iletisim@serrabilisim.com">iletisim@serrabilisim.com</a>
+          <a href="tel:+905303213033">+90 530 321 30 33</a>
+          <address class="footer__addr"><span class="al"><span class="as as1">Atatürk Mah. Ertuğrul Gazi Sk. No:&nbsp;2B,</span> <span class="as as2">Metropol İstanbul</span></span> <span class="al"><span class="as as3">C1&nbsp;Blok, İç Kapı&nbsp;131,</span> <span class="as as4">34758 Ataşehir / İstanbul</span></span></address>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span id="year"></span> Serra Bilişim. Tüm hakları saklıdır.</span>
+        <span class="footer__legal">
+          <a href="/gizlilik.html">KVKK Aydınlatma Metni</a>
+          <a href="/gizlilik.html#cerez">Çerez Politikası</a>
+        </span>
+        <span>SAP ve SAP Business One, SAP SE'nin tescilli markalarıdır.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+  <script>
+    (function () {
+      var d = document.getElementById("tocDetails");
+      if (!d) return;
+      if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open");
+      d.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () {
+        if (window.matchMedia("(max-width: 960px)").matches) d.removeAttribute("open"); }); });
+    })();
+  </script>
+</body>
+</html>
